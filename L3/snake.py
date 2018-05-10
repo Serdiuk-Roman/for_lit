@@ -109,7 +109,7 @@ class Snake(object):
 
 
 class Body(object):
-    def __init__(self, x, y, char='='):
+    def __init__(self, x, y, char='#'):
         self.x = x
         self.y = y
         self.char = char
@@ -146,7 +146,7 @@ if __name__ == '__main__':
     window.border(0)
 
     snake = Snake(SNAKE_X, SNAKE_Y, window)
-    food = Food(window, '*')
+    food = Food(window, '@')
 
     while True:
         window.clear()

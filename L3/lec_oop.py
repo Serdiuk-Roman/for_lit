@@ -8,12 +8,12 @@ class AnimalError(Exception):
         self.animal = animal
 
 
-
 class Animal:
     """Base class for animal
 
     bla-bla-car
     """
+
     def say(self):
         raise NotImplementetError
 
@@ -35,7 +35,8 @@ class Predator:
 
 class Cat(Animal, Predator):
     """sss"""
-    def __init__(self, name, color = "red"):
+
+    def __init__(self, name, color="red"):
         self.color = color
         super().__init__(name)
 
@@ -50,16 +51,15 @@ class Cat(Animal, Predator):
             raise AnimalError(self)
 
 
+if __name__ is "__main__":
+    black_cat = Cat("Black")
+    vasia_car = Cat("Vasia", "brown")
+    sharik_car = Cat("Sharik", "white")
+    black_cat.say("qwe")
+    vasia_car.say("rty")
+    sharik_car.say("asd")
 
-
-black_cat = Cat("Black")
-vasia_car = Cat("Vasia", "brown")
-sharik_car = Cat("Sharik", "white")
-black_cat.say("qwe")
-vasia_car.say("rty")
-sharik_car.say("asd")
-
-try:
-    sharik_car.say("")
-except AnimalError as e:
-    print(e.animal)
+    try:
+        sharik_car.say("")
+    except AnimalError as e:
+        print(e.animal)
