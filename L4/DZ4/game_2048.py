@@ -36,6 +36,7 @@
 import curses
 from curses import KEY_RIGHT, KEY_LEFT, KEY_DOWN, KEY_UP
 from random import choice, randint
+import time
 
 
 class Game:
@@ -150,76 +151,19 @@ class Game:
                     return True
         return False
 
+    def has_zero_cell(self):
+        for row in self.field:
+            if 0 in row:
+                return True
+
     def get_score(self):
         return self.score
 
     def get_field(self):
         return self.field
-        # raise NotImplementedError
 
 
-def main():
-    size = input("Enter size (default = 4) > ")
-    if size == "":
-        size = 4
-    else:
-        size = int(size)
-    game = Game(size)
-
-    while True:
-        field = game.get_field()
-        cell_width = len(str(max(
-            cell
-            for row in field
-            for cell in row
-        )))
-
-        # print("\033[H\033[J", end="")
-        print("Score: ", game.get_score())
-        print('\n'.join(
-            ' '.join(
-                str(cell).rjust(cell_width)
-                for cell in row
-            )
-            for row in field
-        ))
-
-        if not game.has_moves():
-            print("No available moves left, game over.")
-            break
-
-        print("W, A, S, D - move")
-        print("Q - exit")
-
-        try:
-            c = input("> ")
-        except (EOFError, KeyboardInterrupt):
-            break
-
-        if c in ('a', 'A'):
-            game.move_left()
-            if game.has_moves():
-                game.change_free_cell()
-        elif c in ('d', 'D'):
-            game.move_right()
-            if game.has_moves():
-                game.change_free_cell()
-        elif c in ('w', 'W'):
-            game.move_up()
-            if game.has_moves():
-                game.change_free_cell()
-        elif c in ('s', 'S'):
-            game.move_down()
-            if game.has_moves():
-                game.change_free_cell()
-        elif c in ('q', 'Q'):
-            break
-
-    print("Bye!")
-
-
-if __name__ == '__main__':
-    # main()
+def game_manager():
     curses.initscr()
     window = curses.newwin(17, 29, 0, 0)
     window.keypad(1)
@@ -227,20 +171,13 @@ if __name__ == '__main__':
     curses.curs_set(0)
     window.border(0)
 
-    # info_window = curses.newwin(12, 12, 0, 30)
-    # info_window.keypad(1)
-    # info_window.border(0)
-    # info_window.clear()
-
-
     game = Game(4, window)
-    # info_window.addstr(0, 5, game.score)
 
     while True:
         window.clear()
         window.border(0)
 
-        # window.addstr(0, 5, "Score")
+        window.addstr(0, 8, "Score: " + str(game.score))
         for i in range(1, 16):
             window.addstr(i, 7, "│")
             window.addstr(i, 14, "│")
@@ -251,23 +188,33 @@ if __name__ == '__main__':
         game.render()
         event = window.getch()
 
+        if not game.has_moves():
+            window.addstr(1, 5, "No available moves left")
+            window.addstr(2, 8, "game over.")
+            time.sleep(3)
+            break
+
         if event in (27, 81, 113):
             break
         elif event == KEY_LEFT:
             game.move_left()
-            if game.has_moves():
+            if game.has_zero_cell():
                 game.change_free_cell()
         elif event == KEY_RIGHT:
             game.move_right()
-            if game.has_moves():
+            if game.has_zero_cell():
                 game.change_free_cell()
         elif event == KEY_UP:
             game.move_up()
-            if game.has_moves():
+            if game.has_zero_cell():
                 game.change_free_cell()
         elif event == KEY_DOWN:
             game.move_down()
-            if game.has_moves():
+            if game.has_zero_cell():
                 game.change_free_cell()
 
     curses.endwin()
+
+
+if __name__ == '__main__':
+    game_manager()

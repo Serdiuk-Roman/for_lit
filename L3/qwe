@@ -3,7 +3,7 @@ def get_field
 def get_score
 
 def has_moves
-    true or folse
+    true or false
 
 def move
 
