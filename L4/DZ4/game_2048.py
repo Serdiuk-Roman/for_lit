@@ -177,7 +177,7 @@ def game_manager():
         window.clear()
         window.border(0)
 
-        window.addstr(0, 8, "Score: " + str(game.score))
+        window.addstr(0, 9, "Score: " + str(game.score) + " ")
         for i in range(1, 16):
             window.addstr(i, 7, "│")
             window.addstr(i, 14, "│")
