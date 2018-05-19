@@ -1,7 +1,9 @@
 from abc import ABCMeta
 
-
 class Unit(metaclass=ABCMeta):
+    def __init__(self, health, recharge):
+        self.health = health
+        self.recharge = recharge
 
     @abstractmethod
     def attack(self, target):
@@ -9,6 +11,10 @@ class Unit(metaclass=ABCMeta):
 
     @abstractmethod
     def take_damage(self, dmg):
+        pass
+
+    @abstractmethod
+    def is_active(self):
         pass
 
     # @property
@@ -34,3 +40,14 @@ class Clock:
 
     def time(self):
         return self.i
+
+
+class Soldier(Unit):
+    def __init__(self, health, recharge, experience):
+        pass
+
+    def attack(self):
+        return 0.5 * (1 + self.health/100) * random(50 + self.experience, 100) / 100
+
+    def damage(self):
+        return 0.05 + self.experience / 100
