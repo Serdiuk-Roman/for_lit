@@ -1,0 +1,3 @@
+git add -A
+git commit -m "first var fight"
+git push https://github.com/Serdiuk-Roman/for_lit.git

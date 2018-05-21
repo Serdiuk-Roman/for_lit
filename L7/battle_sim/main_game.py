@@ -10,6 +10,7 @@ from Armies import Army
 class Battle_sim():
     def __init__(self):
         self.armies = []
+        self.losers = []
         self.gen_list = [
             "USA.json",
             "ZIM.json",
@@ -24,7 +25,6 @@ class Battle_sim():
             "weakest",
             "strongest",
         ]
-        self.fight_loop = []
 
     def init_armies(self):
         # the choice of the number of armies
@@ -75,24 +75,6 @@ class Battle_sim():
             army_strategy = self.strategy_list[number_of_strategy - 1]
             army.add_strategy(army_strategy)
 
-        # forming a list of enemies
-        for army in self.armies:
-            enemies = [
-                squad
-                for tmp_army in self.armies
-                for squad in tmp_army.squads
-                if tmp_army is not army
-            ]
-            army.add_enemies(enemies)
-
-        # creating a sequence of attacking teams
-        self.fight_loop = [
-            squad
-            for tmp_army in self.armies
-            for squad in tmp_army.squads
-        ]
-        shuffle(self.fight_loop)
-
         # show squads
         squad_list = [
             (squad.name, squad.health)
@@ -104,13 +86,40 @@ class Battle_sim():
 
     def start_game(self):
         print("START GAME")
-        for i in self.fight_loop:
-            print([
-                (army.name, army.strategy, army.health)
+        while True:
+            for army in self.armies:
+                print(army.name, "::", army.health)
+
+            attack_army = choice(list(
+                army
                 for army in self.armies
-            ])
-            for squad in self.fight_loop:
-                squad.attack()
+                if army.is_active
+            ))
+            attack_squad = choice(list(
+                squad
+                for squad in attack_army.squads
+                if squad.is_active
+            ))
+            defend_armies = [
+                army
+                for army in self.armies
+                # if army != attack_army and army.is_active
+            ]
+            defend_squads = [
+                squad
+                for army in defend_armies
+                for squad in army.squads
+                # if squad.is_active
+            ]
+            attack_squad.attack(defend_squads, attack_army.strategy)
+            for army in self.armies:
+                if army.health == 0:
+                    army_index = self.armies.index(army)
+                    los_army = self.armies.pop(army_index)
+                    self.losers.append(los_army)
+            if len(self.armies) == 1:
+                break
+        print(self.armies.pop().name, "WIN")
 
 
 if __name__ == "__main__":

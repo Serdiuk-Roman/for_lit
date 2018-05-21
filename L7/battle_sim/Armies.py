@@ -16,17 +16,19 @@ class Army():
         self.strategy = ""
 
     def add_strategy(self, strategy):
-        for squad in self.squads:
-            squad.strategy = strategy
         self.strategy = strategy
-
-    def add_enemies(self, enemies):
-        for squad in self.squads:
-            squad.enemies = enemies
 
     @property
     def health(self):
         return sum([squad.health for squad in self.squads])
+
+    @property
+    def is_alive(self):
+        return sum([squad.alive for squad in self.squads]) > 0
+
+    @property
+    def is_active(self):
+        return True
 
 
 if __name__ == '__main__':

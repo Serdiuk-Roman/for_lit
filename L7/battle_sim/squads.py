@@ -3,36 +3,29 @@
 
 """
     ## Squads
-## Команди
-
-Squads are consisted out of a number of units (soldiers or vehicles),
-that behave as a coherent group.
-Команди складаються з ряду підрозділів (солдатів або транспортних засобів),
-які ведуть себе як пов'язана група.
-
-A squad is active as long as is contains an active unit.
-Група є активною, якщо вона містить активного юніта.
-
-#### Attack
-#### Атака
-
-The attack success probability of a squad is determined
-as the geometric average o the attack success probability of each member.
-Імовірність успішного удару команди визначається
-як геометричний середній показник успіху атаки кожного члена.
-
-#### Damage
-#### Пошкодження
-
-The damage received on a successful attack
-is distributed evenly to all squad members.
-Пошкодження, отримане від успішної атаки,
-рівномірно розподіляється серед усіх членів команди.
-
-The damage inflicted on a successful attack
-is the accumulation of the damage inflicted by each squad member.
-Пошкодження, завдане успішній атаці,
-це накопичення пошкодженнь, завданої кожним членом команди.
+    ## Команди
+    Squads are consisted out of a number of units (soldiers or vehicles),
+    that behave as a coherent group.
+    Команди складаються з ряду підрозділів (солдатів або транспортних засобів),
+    які ведуть себе як пов'язана група.
+    A squad is active as long as is contains an active unit.
+    Група є активною, якщо вона містить активного юніта.
+    #### Attack
+    #### Атака
+    The attack success probability of a squad is determined
+    as the geometric average o the attack success probability of each member.
+    Імовірність успішного удару команди визначається
+    як геометричний середній показник успіху атаки кожного члена.
+    #### Damage
+    #### Пошкодження
+    The damage received on a successful attack
+    is distributed evenly to all squad members.
+    Пошкодження, отримане від успішної атаки,
+    рівномірно розподіляється серед усіх членів команди.
+    The damage inflicted on a successful attack
+    is the accumulation of the damage inflicted by each squad member.
+    Пошкодження, завдане успішній атаці,
+    це накопичення пошкодженнь, завданої кожним членом команди.
 """
 
 from random import choice
@@ -62,8 +55,6 @@ class Squad(Unit):
                     unit["operators"]
                 ))
         self.strategy = ""
-        self.enemies = []
-        self.enemy = None
 
     @property
     def health(self):
@@ -72,36 +63,41 @@ class Squad(Unit):
 
     @health.setter
     def health(self, value):
-        print("setter", self.enemy.name)
-        foo = value / len(self.enemy.units)
-        for i in self.enemy.units:
-            i.health = foo
-        print(self.enemy.health)
+        damag_part = value / len(self.units)
+        for unit in self.units:
+            unit.health = damag_part
+        print("health", self.name, self.health)
 
     def attack_prob(self):
         multiplication = 1
         for unit in self.units:
             multiplication *= unit.attack_prob()
         success_prob = pow(multiplication, 1 / len(self.units))
-        return float(success_prob)
+        return success_prob
 
-    def attack(self):
+    def attack(self, defend_squads, strategy):
 
-        if self.strategy == "random":
-            self.enemy = choice(self.enemies)
-        elif self.strategy == "weakest":
-            self.enemy = min(self.enemies, key=lambda sq: sq.health)
-        elif self.strategy == "strongest":
-            self.enemy = max(self.enemies, key=lambda sq: sq.health)
+        if strategy == "random":
+            enemy = choice(defend_squads)
+        elif strategy == "weakest":
+            enemy = min(defend_squads, key=lambda sq: sq.health)
+        elif strategy == "strongest":
+            enemy = max(defend_squads, key=lambda sq: sq.health)
 
-        print(self.name, self.strategy, "attack", self.enemy.name)
-        print(self.health, "vs", self.enemy.health)
-        print(str(self.attack_prob()), ">", str(self.enemy.attack_prob()))
-        for i in range(10):
-            print(self.attack_prob() > self.enemy.attack_prob())
-        if self.attack_prob() > self.enemy.attack_prob():
-            print("Good", self.enemy.name)
-            self.enemy.health = 100
+        attack_success = self.attack_prob()
+        defend_success = enemy.attack_prob()
+        # print(attack_success, "vs", defend_success)
+        if attack_success > defend_success:
+            # damage to health
+            print(
+                self.name,
+                self.health,
+                strategy,
+                "-->",
+                enemy.name,
+                enemy.health
+            )
+            enemy.health = 1000
         else:
             print("wrong")
 
@@ -111,6 +107,10 @@ class Squad(Unit):
     @property
     def is_alive(self):
         return sum([unit.alive for unit in self.units]) > 0
+
+    @property
+    def is_active(self):
+        return True
 
 
 if __name__ == '__main__':
@@ -170,18 +170,20 @@ if __name__ == '__main__':
     elf = Squad("Elf", elfs)
     dwarf = Squad("Dwarf", dwarfs)
 
-    goblin.strategy = "weakest"
-    elf.strategy = "strongest"
-    dwarf.strategy = "random"
-
-    goblin.enemies = [elf, dwarf]
-    elf.enemies = [goblin, dwarf]
-    dwarf.enemies = [goblin, elf]
-
-    goblin.attack()
-    elf.attack()
-    dwarf.attack()
+    enemies1 = [elf, dwarf]
+    enemies2 = [goblin, dwarf]
+    enemies3 = [goblin, elf]
 
     print(goblin.name, goblin.health)
     print(elf.name, elf.health)
     print(dwarf.name, dwarf.health)
+
+    for i in range(3):
+
+        goblin.attack(enemies1, "weakest")
+        elf.attack(enemies2, "strongest")
+        dwarf.attack(enemies3, "random")
+
+        print(goblin.name, goblin.health)
+        print(elf.name, elf.health)
+        print(dwarf.name, dwarf.health)

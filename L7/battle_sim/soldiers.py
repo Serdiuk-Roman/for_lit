@@ -11,8 +11,8 @@ class Soldier(Unit):
         self.name = name
         self._health = health
         self.unit_type = unit_type
-        self.experience = 0
-        self.recharge = 100
+        self.experience = 0  # 0 - 50
+        self.recharge = randint(100, 200)
 
     @property
     def health(self):
@@ -20,7 +20,7 @@ class Soldier(Unit):
 
     @health.setter
     def health(self, value):
-        self._health -= value
+        self._health = max(self._health - value, 0)
 
     def attack_prob(self):
         success_prob = (
@@ -35,9 +35,12 @@ class Soldier(Unit):
     def is_alive(self):
         return self.health > 0
 
+    def is_active(self):
+        return True
+
     # def recharge(self):
-        # bench = False
-        # if bench:
-        #     return False
-        # else:
-        #     rech_time 
+        # pass
+
+
+if __name__ == '__main__':
+    pass
