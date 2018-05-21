@@ -1,0 +1,365 @@
+{
+  "armies": [
+    {
+      "name": "ZIM",
+      "squads": [
+        {
+          "name": "ZIM squad #1",
+          "units": [
+            {
+              "health": 359,
+              "name": "ZIM squad #1, vehicle #1",
+              "operators": [
+                {
+                  "health": 95,
+                  "name": "ZIM squad #1, vehicle #1, soldier #1",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 431,
+              "name": "ZIM squad #1, vehicle #2",
+              "operators": [
+                {
+                  "health": 92,
+                  "name": "ZIM squad #1, vehicle #2, soldier #1",
+                  "unit_type": "soldier"
+                },
+                {
+                  "health": 98,
+                  "name": "ZIM squad #1, vehicle #2, soldier #2",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 337,
+              "name": "ZIM squad #1, vehicle #3",
+              "operators": [
+                {
+                  "health": 80,
+                  "name": "ZIM squad #1, vehicle #3, soldier #1",
+                  "unit_type": "soldier"
+                },
+                {
+                  "health": 95,
+                  "name": "ZIM squad #1, vehicle #3, soldier #2",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 61,
+              "name": "ZIM squad #1, soldier #1",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 88,
+              "name": "ZIM squad #1, soldier #2",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 76,
+              "name": "ZIM squad #1, soldier #3",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 69,
+              "name": "ZIM squad #1, soldier #4",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 79,
+              "name": "ZIM squad #1, soldier #5",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 82,
+              "name": "ZIM squad #1, soldier #6",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 62,
+              "name": "ZIM squad #1, soldier #7",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 53,
+              "name": "ZIM squad #1, soldier #8",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 66,
+              "name": "ZIM squad #1, soldier #9",
+              "unit_type": "soldier"
+            }
+          ]
+        },
+        {
+          "name": "ZIM squad #2",
+          "units": [
+            {
+              "health": 202,
+              "name": "ZIM squad #2, vehicle #1",
+              "operators": [
+                {
+                  "health": 78,
+                  "name": "ZIM squad #2, vehicle #1, soldier #1",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 499,
+              "name": "ZIM squad #2, vehicle #2",
+              "operators": [
+                {
+                  "health": 51,
+                  "name": "ZIM squad #2, vehicle #2, soldier #1",
+                  "unit_type": "soldier"
+                },
+                {
+                  "health": 89,
+                  "name": "ZIM squad #2, vehicle #2, soldier #2",
+                  "unit_type": "soldier"
+                },
+                {
+                  "health": 84,
+                  "name": "ZIM squad #2, vehicle #2, soldier #3",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 520,
+              "name": "ZIM squad #2, vehicle #3",
+              "operators": [
+                {
+                  "health": 62,
+                  "name": "ZIM squad #2, vehicle #3, soldier #1",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 435,
+              "name": "ZIM squad #2, vehicle #4",
+              "operators": [
+                {
+                  "health": 70,
+                  "name": "ZIM squad #2, vehicle #4, soldier #1",
+                  "unit_type": "soldier"
+                },
+                {
+                  "health": 54,
+                  "name": "ZIM squad #2, vehicle #4, soldier #2",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 206,
+              "name": "ZIM squad #2, vehicle #5",
+              "operators": [
+                {
+                  "health": 84,
+                  "name": "ZIM squad #2, vehicle #5, soldier #1",
+                  "unit_type": "soldier"
+                },
+                {
+                  "health": 54,
+                  "name": "ZIM squad #2, vehicle #5, soldier #2",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 53,
+              "name": "ZIM squad #2, soldier #1",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 51,
+              "name": "ZIM squad #2, soldier #2",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 88,
+              "name": "ZIM squad #2, soldier #3",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 89,
+              "name": "ZIM squad #2, soldier #4",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 50,
+              "name": "ZIM squad #2, soldier #5",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 87,
+              "name": "ZIM squad #2, soldier #6",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 87,
+              "name": "ZIM squad #2, soldier #7",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 100,
+              "name": "ZIM squad #2, soldier #8",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 99,
+              "name": "ZIM squad #2, soldier #9",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 57,
+              "name": "ZIM squad #2, soldier #10",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 84,
+              "name": "ZIM squad #2, soldier #11",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 92,
+              "name": "ZIM squad #2, soldier #12",
+              "unit_type": "soldier"
+            }
+          ]
+        },
+        {
+          "name": "ZIM squad #3",
+          "units": [
+            {
+              "health": 236,
+              "name": "ZIM squad #3, vehicle #1",
+              "operators": [
+                {
+                  "health": 85,
+                  "name": "ZIM squad #3, vehicle #1, soldier #1",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 483,
+              "name": "ZIM squad #3, vehicle #2",
+              "operators": [
+                {
+                  "health": 90,
+                  "name": "ZIM squad #3, vehicle #2, soldier #1",
+                  "unit_type": "soldier"
+                },
+                {
+                  "health": 57,
+                  "name": "ZIM squad #3, vehicle #2, soldier #2",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 299,
+              "name": "ZIM squad #3, vehicle #3",
+              "operators": [
+                {
+                  "health": 64,
+                  "name": "ZIM squad #3, vehicle #3, soldier #1",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 299,
+              "name": "ZIM squad #3, vehicle #4",
+              "operators": [
+                {
+                  "health": 81,
+                  "name": "ZIM squad #3, vehicle #4, soldier #1",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 595,
+              "name": "ZIM squad #3, vehicle #5",
+              "operators": [
+                {
+                  "health": 93,
+                  "name": "ZIM squad #3, vehicle #5, soldier #1",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 100,
+              "name": "ZIM squad #3, soldier #1",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 95,
+              "name": "ZIM squad #3, soldier #2",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 62,
+              "name": "ZIM squad #3, soldier #3",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 66,
+              "name": "ZIM squad #3, soldier #4",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 88,
+              "name": "ZIM squad #3, soldier #5",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 65,
+              "name": "ZIM squad #3, soldier #6",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 73,
+              "name": "ZIM squad #3, soldier #7",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 62,
+              "name": "ZIM squad #3, soldier #8",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 98,
+              "name": "ZIM squad #3, soldier #9",
+              "unit_type": "soldier"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

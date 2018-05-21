@@ -1,0 +1,535 @@
+{
+  "armies": [
+    {
+      "name": "Mordor",
+      "squads": [
+        {
+          "name": "Mordor squad #1",
+          "units": [
+            {
+              "health": 243,
+              "name": "Mordor squad #1, vehicle #1",
+              "operators": [
+                {
+                  "health": 93,
+                  "name": "Mordor squad #1, vehicle #1, soldier #1",
+                  "unit_type": "soldier"
+                },
+                {
+                  "health": 94,
+                  "name": "Mordor squad #1, vehicle #1, soldier #2",
+                  "unit_type": "soldier"
+                },
+                {
+                  "health": 66,
+                  "name": "Mordor squad #1, vehicle #1, soldier #3",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 255,
+              "name": "Mordor squad #1, vehicle #2",
+              "operators": [
+                {
+                  "health": 92,
+                  "name": "Mordor squad #1, vehicle #2, soldier #1",
+                  "unit_type": "soldier"
+                },
+                {
+                  "health": 76,
+                  "name": "Mordor squad #1, vehicle #2, soldier #2",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 600,
+              "name": "Mordor squad #1, vehicle #3",
+              "operators": [
+                {
+                  "health": 82,
+                  "name": "Mordor squad #1, vehicle #3, soldier #1",
+                  "unit_type": "soldier"
+                },
+                {
+                  "health": 96,
+                  "name": "Mordor squad #1, vehicle #3, soldier #2",
+                  "unit_type": "soldier"
+                },
+                {
+                  "health": 56,
+                  "name": "Mordor squad #1, vehicle #3, soldier #3",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 77,
+              "name": "Mordor squad #1, soldier #1",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 94,
+              "name": "Mordor squad #1, soldier #2",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 50,
+              "name": "Mordor squad #1, soldier #3",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 91,
+              "name": "Mordor squad #1, soldier #4",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 96,
+              "name": "Mordor squad #1, soldier #5",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 82,
+              "name": "Mordor squad #1, soldier #6",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 91,
+              "name": "Mordor squad #1, soldier #7",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 100,
+              "name": "Mordor squad #1, soldier #8",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 58,
+              "name": "Mordor squad #1, soldier #9",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 50,
+              "name": "Mordor squad #1, soldier #10",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 88,
+              "name": "Mordor squad #1, soldier #11",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 65,
+              "name": "Mordor squad #1, soldier #12",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 77,
+              "name": "Mordor squad #1, soldier #13",
+              "unit_type": "soldier"
+            }
+          ]
+        },
+        {
+          "name": "Mordor squad #2",
+          "units": [
+            {
+              "health": 411,
+              "name": "Mordor squad #2, vehicle #1",
+              "operators": [
+                {
+                  "health": 60,
+                  "name": "Mordor squad #2, vehicle #1, soldier #1",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 517,
+              "name": "Mordor squad #2, vehicle #2",
+              "operators": [
+                {
+                  "health": 98,
+                  "name": "Mordor squad #2, vehicle #2, soldier #1",
+                  "unit_type": "soldier"
+                },
+                {
+                  "health": 59,
+                  "name": "Mordor squad #2, vehicle #2, soldier #2",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 301,
+              "name": "Mordor squad #2, vehicle #3",
+              "operators": [
+                {
+                  "health": 80,
+                  "name": "Mordor squad #2, vehicle #3, soldier #1",
+                  "unit_type": "soldier"
+                },
+                {
+                  "health": 98,
+                  "name": "Mordor squad #2, vehicle #3, soldier #2",
+                  "unit_type": "soldier"
+                },
+                {
+                  "health": 73,
+                  "name": "Mordor squad #2, vehicle #3, soldier #3",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 421,
+              "name": "Mordor squad #2, vehicle #4",
+              "operators": [
+                {
+                  "health": 68,
+                  "name": "Mordor squad #2, vehicle #4, soldier #1",
+                  "unit_type": "soldier"
+                },
+                {
+                  "health": 76,
+                  "name": "Mordor squad #2, vehicle #4, soldier #2",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 218,
+              "name": "Mordor squad #2, vehicle #5",
+              "operators": [
+                {
+                  "health": 95,
+                  "name": "Mordor squad #2, vehicle #5, soldier #1",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 78,
+              "name": "Mordor squad #2, soldier #1",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 85,
+              "name": "Mordor squad #2, soldier #2",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 91,
+              "name": "Mordor squad #2, soldier #3",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 53,
+              "name": "Mordor squad #2, soldier #4",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 97,
+              "name": "Mordor squad #2, soldier #5",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 81,
+              "name": "Mordor squad #2, soldier #6",
+              "unit_type": "soldier"
+            }
+          ]
+        },
+        {
+          "name": "Mordor squad #3",
+          "units": [
+            {
+              "health": 436,
+              "name": "Mordor squad #3, vehicle #1",
+              "operators": [
+                {
+                  "health": 97,
+                  "name": "Mordor squad #3, vehicle #1, soldier #1",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 456,
+              "name": "Mordor squad #3, vehicle #2",
+              "operators": [
+                {
+                  "health": 77,
+                  "name": "Mordor squad #3, vehicle #2, soldier #1",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 234,
+              "name": "Mordor squad #3, vehicle #3",
+              "operators": [
+                {
+                  "health": 55,
+                  "name": "Mordor squad #3, vehicle #3, soldier #1",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 324,
+              "name": "Mordor squad #3, vehicle #4",
+              "operators": [
+                {
+                  "health": 84,
+                  "name": "Mordor squad #3, vehicle #4, soldier #1",
+                  "unit_type": "soldier"
+                },
+                {
+                  "health": 90,
+                  "name": "Mordor squad #3, vehicle #4, soldier #2",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 60,
+              "name": "Mordor squad #3, soldier #1",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 54,
+              "name": "Mordor squad #3, soldier #2",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 68,
+              "name": "Mordor squad #3, soldier #3",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 50,
+              "name": "Mordor squad #3, soldier #4",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 97,
+              "name": "Mordor squad #3, soldier #5",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 90,
+              "name": "Mordor squad #3, soldier #6",
+              "unit_type": "soldier"
+            }
+          ]
+        },
+        {
+          "name": "Mordor squad #4",
+          "units": [
+            {
+              "health": 518,
+              "name": "Mordor squad #4, vehicle #1",
+              "operators": [
+                {
+                  "health": 71,
+                  "name": "Mordor squad #4, vehicle #1, soldier #1",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 590,
+              "name": "Mordor squad #4, vehicle #2",
+              "operators": [
+                {
+                  "health": 63,
+                  "name": "Mordor squad #4, vehicle #2, soldier #1",
+                  "unit_type": "soldier"
+                },
+                {
+                  "health": 75,
+                  "name": "Mordor squad #4, vehicle #2, soldier #2",
+                  "unit_type": "soldier"
+                },
+                {
+                  "health": 55,
+                  "name": "Mordor squad #4, vehicle #2, soldier #3",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 201,
+              "name": "Mordor squad #4, vehicle #3",
+              "operators": [
+                {
+                  "health": 97,
+                  "name": "Mordor squad #4, vehicle #3, soldier #1",
+                  "unit_type": "soldier"
+                },
+                {
+                  "health": 96,
+                  "name": "Mordor squad #4, vehicle #3, soldier #2",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 379,
+              "name": "Mordor squad #4, vehicle #4",
+              "operators": [
+                {
+                  "health": 53,
+                  "name": "Mordor squad #4, vehicle #4, soldier #1",
+                  "unit_type": "soldier"
+                },
+                {
+                  "health": 77,
+                  "name": "Mordor squad #4, vehicle #4, soldier #2",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 72,
+              "name": "Mordor squad #4, soldier #1",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 51,
+              "name": "Mordor squad #4, soldier #2",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 100,
+              "name": "Mordor squad #4, soldier #3",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 70,
+              "name": "Mordor squad #4, soldier #4",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 77,
+              "name": "Mordor squad #4, soldier #5",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 82,
+              "name": "Mordor squad #4, soldier #6",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 70,
+              "name": "Mordor squad #4, soldier #7",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 70,
+              "name": "Mordor squad #4, soldier #8",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 55,
+              "name": "Mordor squad #4, soldier #9",
+              "unit_type": "soldier"
+            }
+          ]
+        },
+        {
+          "name": "Mordor squad #5",
+          "units": [
+            {
+              "health": 346,
+              "name": "Mordor squad #5, vehicle #1",
+              "operators": [
+                {
+                  "health": 79,
+                  "name": "Mordor squad #5, vehicle #1, soldier #1",
+                  "unit_type": "soldier"
+                },
+                {
+                  "health": 82,
+                  "name": "Mordor squad #5, vehicle #1, soldier #2",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 478,
+              "name": "Mordor squad #5, vehicle #2",
+              "operators": [
+                {
+                  "health": 81,
+                  "name": "Mordor squad #5, vehicle #2, soldier #1",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 74,
+              "name": "Mordor squad #5, soldier #1",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 50,
+              "name": "Mordor squad #5, soldier #2",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 57,
+              "name": "Mordor squad #5, soldier #3",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 56,
+              "name": "Mordor squad #5, soldier #4",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 93,
+              "name": "Mordor squad #5, soldier #5",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 100,
+              "name": "Mordor squad #5, soldier #6",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 94,
+              "name": "Mordor squad #5, soldier #7",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 100,
+              "name": "Mordor squad #5, soldier #8",
+              "unit_type": "soldier"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

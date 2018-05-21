@@ -10,7 +10,7 @@ def generate_soldiers(prefix, soldiers_mn, soldiers_mx):
     assert 0 < soldiers_mn <= soldiers_mx
     for i in range(random.randint(soldiers_mn, soldiers_mx)):
         yield {
-            "health": 50,
+            "health": random.randint(50, 100),
             "name": "%s, soldier #%d" % (prefix, i + 1),
             "unit_type": "soldier",
         }
@@ -21,7 +21,7 @@ def generate_vehicles(prefix, vehicles_mn, vehicles_mx):
     for i in range(random.randint(vehicles_mn, vehicles_mx)):
         name = "%s, vehicle #%d" % (prefix, i + 1)
         yield {
-            "health": 50,
+            "health": random.randint(200, 600),
             "name": name,
             "unit_type": "vehicle",
             "operators": list(generate_soldiers(name, 1, 3)),

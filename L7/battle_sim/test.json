@@ -1,0 +1,562 @@
+{
+  "armies": [
+    {
+      "name": "asd",
+      "squads": [
+        {
+          "name": "asd squad #1",
+          "units": [
+            {
+              "health": 430,
+              "name": "asd squad #1, vehicle #1",
+              "operators": [
+                {
+                  "health": 58,
+                  "name": "asd squad #1, vehicle #1, soldier #1",
+                  "unit_type": "soldier"
+                },
+                {
+                  "health": 84,
+                  "name": "asd squad #1, vehicle #1, soldier #2",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 571,
+              "name": "asd squad #1, vehicle #2",
+              "operators": [
+                {
+                  "health": 73,
+                  "name": "asd squad #1, vehicle #2, soldier #1",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 536,
+              "name": "asd squad #1, vehicle #3",
+              "operators": [
+                {
+                  "health": 76,
+                  "name": "asd squad #1, vehicle #3, soldier #1",
+                  "unit_type": "soldier"
+                },
+                {
+                  "health": 87,
+                  "name": "asd squad #1, vehicle #3, soldier #2",
+                  "unit_type": "soldier"
+                },
+                {
+                  "health": 87,
+                  "name": "asd squad #1, vehicle #3, soldier #3",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 304,
+              "name": "asd squad #1, vehicle #4",
+              "operators": [
+                {
+                  "health": 90,
+                  "name": "asd squad #1, vehicle #4, soldier #1",
+                  "unit_type": "soldier"
+                },
+                {
+                  "health": 95,
+                  "name": "asd squad #1, vehicle #4, soldier #2",
+                  "unit_type": "soldier"
+                },
+                {
+                  "health": 56,
+                  "name": "asd squad #1, vehicle #4, soldier #3",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 79,
+              "name": "asd squad #1, soldier #1",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 53,
+              "name": "asd squad #1, soldier #2",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 65,
+              "name": "asd squad #1, soldier #3",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 51,
+              "name": "asd squad #1, soldier #4",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 53,
+              "name": "asd squad #1, soldier #5",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 82,
+              "name": "asd squad #1, soldier #6",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 79,
+              "name": "asd squad #1, soldier #7",
+              "unit_type": "soldier"
+            }
+          ]
+        },
+        {
+          "name": "asd squad #2",
+          "units": [
+            {
+              "health": 280,
+              "name": "asd squad #2, vehicle #1",
+              "operators": [
+                {
+                  "health": 51,
+                  "name": "asd squad #2, vehicle #1, soldier #1",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 354,
+              "name": "asd squad #2, vehicle #2",
+              "operators": [
+                {
+                  "health": 99,
+                  "name": "asd squad #2, vehicle #2, soldier #1",
+                  "unit_type": "soldier"
+                },
+                {
+                  "health": 66,
+                  "name": "asd squad #2, vehicle #2, soldier #2",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 248,
+              "name": "asd squad #2, vehicle #3",
+              "operators": [
+                {
+                  "health": 77,
+                  "name": "asd squad #2, vehicle #3, soldier #1",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 402,
+              "name": "asd squad #2, vehicle #4",
+              "operators": [
+                {
+                  "health": 83,
+                  "name": "asd squad #2, vehicle #4, soldier #1",
+                  "unit_type": "soldier"
+                },
+                {
+                  "health": 77,
+                  "name": "asd squad #2, vehicle #4, soldier #2",
+                  "unit_type": "soldier"
+                },
+                {
+                  "health": 75,
+                  "name": "asd squad #2, vehicle #4, soldier #3",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 312,
+              "name": "asd squad #2, vehicle #5",
+              "operators": [
+                {
+                  "health": 55,
+                  "name": "asd squad #2, vehicle #5, soldier #1",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 89,
+              "name": "asd squad #2, soldier #1",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 76,
+              "name": "asd squad #2, soldier #2",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 62,
+              "name": "asd squad #2, soldier #3",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 100,
+              "name": "asd squad #2, soldier #4",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 77,
+              "name": "asd squad #2, soldier #5",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 52,
+              "name": "asd squad #2, soldier #6",
+              "unit_type": "soldier"
+            }
+          ]
+        },
+        {
+          "name": "asd squad #3",
+          "units": [
+            {
+              "health": 574,
+              "name": "asd squad #3, vehicle #1",
+              "operators": [
+                {
+                  "health": 62,
+                  "name": "asd squad #3, vehicle #1, soldier #1",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 318,
+              "name": "asd squad #3, vehicle #2",
+              "operators": [
+                {
+                  "health": 82,
+                  "name": "asd squad #3, vehicle #2, soldier #1",
+                  "unit_type": "soldier"
+                },
+                {
+                  "health": 57,
+                  "name": "asd squad #3, vehicle #2, soldier #2",
+                  "unit_type": "soldier"
+                },
+                {
+                  "health": 56,
+                  "name": "asd squad #3, vehicle #2, soldier #3",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 344,
+              "name": "asd squad #3, vehicle #3",
+              "operators": [
+                {
+                  "health": 73,
+                  "name": "asd squad #3, vehicle #3, soldier #1",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 89,
+              "name": "asd squad #3, soldier #1",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 80,
+              "name": "asd squad #3, soldier #2",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 77,
+              "name": "asd squad #3, soldier #3",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 72,
+              "name": "asd squad #3, soldier #4",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 78,
+              "name": "asd squad #3, soldier #5",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 58,
+              "name": "asd squad #3, soldier #6",
+              "unit_type": "soldier"
+            }
+          ]
+        },
+        {
+          "name": "asd squad #4",
+          "units": [
+            {
+              "health": 529,
+              "name": "asd squad #4, vehicle #1",
+              "operators": [
+                {
+                  "health": 97,
+                  "name": "asd squad #4, vehicle #1, soldier #1",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 305,
+              "name": "asd squad #4, vehicle #2",
+              "operators": [
+                {
+                  "health": 64,
+                  "name": "asd squad #4, vehicle #2, soldier #1",
+                  "unit_type": "soldier"
+                },
+                {
+                  "health": 66,
+                  "name": "asd squad #4, vehicle #2, soldier #2",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 571,
+              "name": "asd squad #4, vehicle #3",
+              "operators": [
+                {
+                  "health": 87,
+                  "name": "asd squad #4, vehicle #3, soldier #1",
+                  "unit_type": "soldier"
+                },
+                {
+                  "health": 81,
+                  "name": "asd squad #4, vehicle #3, soldier #2",
+                  "unit_type": "soldier"
+                },
+                {
+                  "health": 82,
+                  "name": "asd squad #4, vehicle #3, soldier #3",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 401,
+              "name": "asd squad #4, vehicle #4",
+              "operators": [
+                {
+                  "health": 76,
+                  "name": "asd squad #4, vehicle #4, soldier #1",
+                  "unit_type": "soldier"
+                },
+                {
+                  "health": 58,
+                  "name": "asd squad #4, vehicle #4, soldier #2",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 200,
+              "name": "asd squad #4, vehicle #5",
+              "operators": [
+                {
+                  "health": 78,
+                  "name": "asd squad #4, vehicle #5, soldier #1",
+                  "unit_type": "soldier"
+                },
+                {
+                  "health": 66,
+                  "name": "asd squad #4, vehicle #5, soldier #2",
+                  "unit_type": "soldier"
+                },
+                {
+                  "health": 59,
+                  "name": "asd squad #4, vehicle #5, soldier #3",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 56,
+              "name": "asd squad #4, soldier #1",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 82,
+              "name": "asd squad #4, soldier #2",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 64,
+              "name": "asd squad #4, soldier #3",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 99,
+              "name": "asd squad #4, soldier #4",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 62,
+              "name": "asd squad #4, soldier #5",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 72,
+              "name": "asd squad #4, soldier #6",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 69,
+              "name": "asd squad #4, soldier #7",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 78,
+              "name": "asd squad #4, soldier #8",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 69,
+              "name": "asd squad #4, soldier #9",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 65,
+              "name": "asd squad #4, soldier #10",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 61,
+              "name": "asd squad #4, soldier #11",
+              "unit_type": "soldier"
+            }
+          ]
+        },
+        {
+          "name": "asd squad #5",
+          "units": [
+            {
+              "health": 319,
+              "name": "asd squad #5, vehicle #1",
+              "operators": [
+                {
+                  "health": 53,
+                  "name": "asd squad #5, vehicle #1, soldier #1",
+                  "unit_type": "soldier"
+                },
+                {
+                  "health": 67,
+                  "name": "asd squad #5, vehicle #1, soldier #2",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 228,
+              "name": "asd squad #5, vehicle #2",
+              "operators": [
+                {
+                  "health": 75,
+                  "name": "asd squad #5, vehicle #2, soldier #1",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 51,
+              "name": "asd squad #5, soldier #1",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 81,
+              "name": "asd squad #5, soldier #2",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 59,
+              "name": "asd squad #5, soldier #3",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 55,
+              "name": "asd squad #5, soldier #4",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 56,
+              "name": "asd squad #5, soldier #5",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 88,
+              "name": "asd squad #5, soldier #6",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 50,
+              "name": "asd squad #5, soldier #7",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 96,
+              "name": "asd squad #5, soldier #8",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 50,
+              "name": "asd squad #5, soldier #9",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 79,
+              "name": "asd squad #5, soldier #10",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 53,
+              "name": "asd squad #5, soldier #11",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 97,
+              "name": "asd squad #5, soldier #12",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 77,
+              "name": "asd squad #5, soldier #13",
+              "unit_type": "soldier"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

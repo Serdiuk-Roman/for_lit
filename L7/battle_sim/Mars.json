@@ -1,0 +1,470 @@
+{
+  "armies": [
+    {
+      "name": "Mars",
+      "squads": [
+        {
+          "name": "Mars squad #1",
+          "units": [
+            {
+              "health": 452,
+              "name": "Mars squad #1, vehicle #1",
+              "operators": [
+                {
+                  "health": 82,
+                  "name": "Mars squad #1, vehicle #1, soldier #1",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 336,
+              "name": "Mars squad #1, vehicle #2",
+              "operators": [
+                {
+                  "health": 82,
+                  "name": "Mars squad #1, vehicle #2, soldier #1",
+                  "unit_type": "soldier"
+                },
+                {
+                  "health": 90,
+                  "name": "Mars squad #1, vehicle #2, soldier #2",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 54,
+              "name": "Mars squad #1, soldier #1",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 90,
+              "name": "Mars squad #1, soldier #2",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 58,
+              "name": "Mars squad #1, soldier #3",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 56,
+              "name": "Mars squad #1, soldier #4",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 63,
+              "name": "Mars squad #1, soldier #5",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 63,
+              "name": "Mars squad #1, soldier #6",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 58,
+              "name": "Mars squad #1, soldier #7",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 94,
+              "name": "Mars squad #1, soldier #8",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 76,
+              "name": "Mars squad #1, soldier #9",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 99,
+              "name": "Mars squad #1, soldier #10",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 51,
+              "name": "Mars squad #1, soldier #11",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 63,
+              "name": "Mars squad #1, soldier #12",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 60,
+              "name": "Mars squad #1, soldier #13",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 62,
+              "name": "Mars squad #1, soldier #14",
+              "unit_type": "soldier"
+            }
+          ]
+        },
+        {
+          "name": "Mars squad #2",
+          "units": [
+            {
+              "health": 593,
+              "name": "Mars squad #2, vehicle #1",
+              "operators": [
+                {
+                  "health": 86,
+                  "name": "Mars squad #2, vehicle #1, soldier #1",
+                  "unit_type": "soldier"
+                },
+                {
+                  "health": 54,
+                  "name": "Mars squad #2, vehicle #1, soldier #2",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 577,
+              "name": "Mars squad #2, vehicle #2",
+              "operators": [
+                {
+                  "health": 74,
+                  "name": "Mars squad #2, vehicle #2, soldier #1",
+                  "unit_type": "soldier"
+                },
+                {
+                  "health": 56,
+                  "name": "Mars squad #2, vehicle #2, soldier #2",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 466,
+              "name": "Mars squad #2, vehicle #3",
+              "operators": [
+                {
+                  "health": 90,
+                  "name": "Mars squad #2, vehicle #3, soldier #1",
+                  "unit_type": "soldier"
+                },
+                {
+                  "health": 67,
+                  "name": "Mars squad #2, vehicle #3, soldier #2",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 508,
+              "name": "Mars squad #2, vehicle #4",
+              "operators": [
+                {
+                  "health": 83,
+                  "name": "Mars squad #2, vehicle #4, soldier #1",
+                  "unit_type": "soldier"
+                },
+                {
+                  "health": 100,
+                  "name": "Mars squad #2, vehicle #4, soldier #2",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 231,
+              "name": "Mars squad #2, vehicle #5",
+              "operators": [
+                {
+                  "health": 61,
+                  "name": "Mars squad #2, vehicle #5, soldier #1",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 61,
+              "name": "Mars squad #2, soldier #1",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 96,
+              "name": "Mars squad #2, soldier #2",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 70,
+              "name": "Mars squad #2, soldier #3",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 63,
+              "name": "Mars squad #2, soldier #4",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 87,
+              "name": "Mars squad #2, soldier #5",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 66,
+              "name": "Mars squad #2, soldier #6",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 77,
+              "name": "Mars squad #2, soldier #7",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 65,
+              "name": "Mars squad #2, soldier #8",
+              "unit_type": "soldier"
+            }
+          ]
+        },
+        {
+          "name": "Mars squad #3",
+          "units": [
+            {
+              "health": 361,
+              "name": "Mars squad #3, vehicle #1",
+              "operators": [
+                {
+                  "health": 62,
+                  "name": "Mars squad #3, vehicle #1, soldier #1",
+                  "unit_type": "soldier"
+                },
+                {
+                  "health": 79,
+                  "name": "Mars squad #3, vehicle #1, soldier #2",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 487,
+              "name": "Mars squad #3, vehicle #2",
+              "operators": [
+                {
+                  "health": 97,
+                  "name": "Mars squad #3, vehicle #2, soldier #1",
+                  "unit_type": "soldier"
+                },
+                {
+                  "health": 54,
+                  "name": "Mars squad #3, vehicle #2, soldier #2",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 225,
+              "name": "Mars squad #3, vehicle #3",
+              "operators": [
+                {
+                  "health": 59,
+                  "name": "Mars squad #3, vehicle #3, soldier #1",
+                  "unit_type": "soldier"
+                },
+                {
+                  "health": 80,
+                  "name": "Mars squad #3, vehicle #3, soldier #2",
+                  "unit_type": "soldier"
+                },
+                {
+                  "health": 67,
+                  "name": "Mars squad #3, vehicle #3, soldier #3",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 379,
+              "name": "Mars squad #3, vehicle #4",
+              "operators": [
+                {
+                  "health": 98,
+                  "name": "Mars squad #3, vehicle #4, soldier #1",
+                  "unit_type": "soldier"
+                },
+                {
+                  "health": 70,
+                  "name": "Mars squad #3, vehicle #4, soldier #2",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 66,
+              "name": "Mars squad #3, soldier #1",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 82,
+              "name": "Mars squad #3, soldier #2",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 71,
+              "name": "Mars squad #3, soldier #3",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 50,
+              "name": "Mars squad #3, soldier #4",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 87,
+              "name": "Mars squad #3, soldier #5",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 50,
+              "name": "Mars squad #3, soldier #6",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 91,
+              "name": "Mars squad #3, soldier #7",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 95,
+              "name": "Mars squad #3, soldier #8",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 72,
+              "name": "Mars squad #3, soldier #9",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 55,
+              "name": "Mars squad #3, soldier #10",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 53,
+              "name": "Mars squad #3, soldier #11",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 88,
+              "name": "Mars squad #3, soldier #12",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 76,
+              "name": "Mars squad #3, soldier #13",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 66,
+              "name": "Mars squad #3, soldier #14",
+              "unit_type": "soldier"
+            }
+          ]
+        },
+        {
+          "name": "Mars squad #4",
+          "units": [
+            {
+              "health": 370,
+              "name": "Mars squad #4, vehicle #1",
+              "operators": [
+                {
+                  "health": 77,
+                  "name": "Mars squad #4, vehicle #1, soldier #1",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 422,
+              "name": "Mars squad #4, vehicle #2",
+              "operators": [
+                {
+                  "health": 67,
+                  "name": "Mars squad #4, vehicle #2, soldier #1",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 68,
+              "name": "Mars squad #4, soldier #1",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 76,
+              "name": "Mars squad #4, soldier #2",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 53,
+              "name": "Mars squad #4, soldier #3",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 51,
+              "name": "Mars squad #4, soldier #4",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 84,
+              "name": "Mars squad #4, soldier #5",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 60,
+              "name": "Mars squad #4, soldier #6",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 76,
+              "name": "Mars squad #4, soldier #7",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 69,
+              "name": "Mars squad #4, soldier #8",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 68,
+              "name": "Mars squad #4, soldier #9",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 92,
+              "name": "Mars squad #4, soldier #10",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 76,
+              "name": "Mars squad #4, soldier #11",
+              "unit_type": "soldier"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

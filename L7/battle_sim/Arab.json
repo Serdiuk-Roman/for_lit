@@ -1,0 +1,314 @@
+{
+  "armies": [
+    {
+      "name": "Arab",
+      "squads": [
+        {
+          "name": "Arab squad #1",
+          "units": [
+            {
+              "health": 216,
+              "name": "Arab squad #1, vehicle #1",
+              "operators": [
+                {
+                  "health": 81,
+                  "name": "Arab squad #1, vehicle #1, soldier #1",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 213,
+              "name": "Arab squad #1, vehicle #2",
+              "operators": [
+                {
+                  "health": 78,
+                  "name": "Arab squad #1, vehicle #2, soldier #1",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 444,
+              "name": "Arab squad #1, vehicle #3",
+              "operators": [
+                {
+                  "health": 94,
+                  "name": "Arab squad #1, vehicle #3, soldier #1",
+                  "unit_type": "soldier"
+                },
+                {
+                  "health": 71,
+                  "name": "Arab squad #1, vehicle #3, soldier #2",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 94,
+              "name": "Arab squad #1, soldier #1",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 92,
+              "name": "Arab squad #1, soldier #2",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 86,
+              "name": "Arab squad #1, soldier #3",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 79,
+              "name": "Arab squad #1, soldier #4",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 71,
+              "name": "Arab squad #1, soldier #5",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 70,
+              "name": "Arab squad #1, soldier #6",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 85,
+              "name": "Arab squad #1, soldier #7",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 56,
+              "name": "Arab squad #1, soldier #8",
+              "unit_type": "soldier"
+            }
+          ]
+        },
+        {
+          "name": "Arab squad #2",
+          "units": [
+            {
+              "health": 322,
+              "name": "Arab squad #2, vehicle #1",
+              "operators": [
+                {
+                  "health": 92,
+                  "name": "Arab squad #2, vehicle #1, soldier #1",
+                  "unit_type": "soldier"
+                },
+                {
+                  "health": 79,
+                  "name": "Arab squad #2, vehicle #1, soldier #2",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 571,
+              "name": "Arab squad #2, vehicle #2",
+              "operators": [
+                {
+                  "health": 92,
+                  "name": "Arab squad #2, vehicle #2, soldier #1",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 344,
+              "name": "Arab squad #2, vehicle #3",
+              "operators": [
+                {
+                  "health": 72,
+                  "name": "Arab squad #2, vehicle #3, soldier #1",
+                  "unit_type": "soldier"
+                },
+                {
+                  "health": 66,
+                  "name": "Arab squad #2, vehicle #3, soldier #2",
+                  "unit_type": "soldier"
+                },
+                {
+                  "health": 50,
+                  "name": "Arab squad #2, vehicle #3, soldier #3",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 216,
+              "name": "Arab squad #2, vehicle #4",
+              "operators": [
+                {
+                  "health": 95,
+                  "name": "Arab squad #2, vehicle #4, soldier #1",
+                  "unit_type": "soldier"
+                },
+                {
+                  "health": 91,
+                  "name": "Arab squad #2, vehicle #4, soldier #2",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 86,
+              "name": "Arab squad #2, soldier #1",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 97,
+              "name": "Arab squad #2, soldier #2",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 65,
+              "name": "Arab squad #2, soldier #3",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 52,
+              "name": "Arab squad #2, soldier #4",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 83,
+              "name": "Arab squad #2, soldier #5",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 55,
+              "name": "Arab squad #2, soldier #6",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 66,
+              "name": "Arab squad #2, soldier #7",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 87,
+              "name": "Arab squad #2, soldier #8",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 55,
+              "name": "Arab squad #2, soldier #9",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 85,
+              "name": "Arab squad #2, soldier #10",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 90,
+              "name": "Arab squad #2, soldier #11",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 94,
+              "name": "Arab squad #2, soldier #12",
+              "unit_type": "soldier"
+            }
+          ]
+        },
+        {
+          "name": "Arab squad #3",
+          "units": [
+            {
+              "health": 205,
+              "name": "Arab squad #3, vehicle #1",
+              "operators": [
+                {
+                  "health": 53,
+                  "name": "Arab squad #3, vehicle #1, soldier #1",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 580,
+              "name": "Arab squad #3, vehicle #2",
+              "operators": [
+                {
+                  "health": 95,
+                  "name": "Arab squad #3, vehicle #2, soldier #1",
+                  "unit_type": "soldier"
+                },
+                {
+                  "health": 98,
+                  "name": "Arab squad #3, vehicle #2, soldier #2",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 214,
+              "name": "Arab squad #3, vehicle #3",
+              "operators": [
+                {
+                  "health": 52,
+                  "name": "Arab squad #3, vehicle #3, soldier #1",
+                  "unit_type": "soldier"
+                },
+                {
+                  "health": 60,
+                  "name": "Arab squad #3, vehicle #3, soldier #2",
+                  "unit_type": "soldier"
+                },
+                {
+                  "health": 96,
+                  "name": "Arab squad #3, vehicle #3, soldier #3",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 83,
+              "name": "Arab squad #3, soldier #1",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 75,
+              "name": "Arab squad #3, soldier #2",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 63,
+              "name": "Arab squad #3, soldier #3",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 61,
+              "name": "Arab squad #3, soldier #4",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 64,
+              "name": "Arab squad #3, soldier #5",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 71,
+              "name": "Arab squad #3, soldier #6",
+              "unit_type": "soldier"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

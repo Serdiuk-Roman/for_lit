@@ -1,23 +1,31 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
 from unit_abc import Unit
-from random import random, randint
+from random import randint
 # from time import time
 
 
 class Soldier(Unit):
-    def __init__(self, name, army):
+    def __init__(self, name, health, unit_type):
         self.name = name
-        self.army = army
-        self.health = randint(range(50, 100))
+        self._health = health
+        self.unit_type = unit_type
         self.experience = 0
         self.recharge = 100
 
+    @property
     def health(self):
-        pass
+        return self._health
 
-    def attack(self):
+    @health.setter
+    def health(self, value):
+        self._health -= value
+
+    def attack_prob(self):
         success_prob = (
             0.5 * (1 + self.health / 100) *
-            random(50 + self.experience, 100) / 100
+            randint(50 + self.experience, 100) / 100
         )
         return success_prob
 

@@ -1,0 +1,450 @@
+{
+  "armies": [
+    {
+      "name": "USA",
+      "squads": [
+        {
+          "name": "USA squad #1",
+          "units": [
+            {
+              "health": 267,
+              "name": "USA squad #1, vehicle #1",
+              "operators": [
+                {
+                  "health": 96,
+                  "name": "USA squad #1, vehicle #1, soldier #1",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 523,
+              "name": "USA squad #1, vehicle #2",
+              "operators": [
+                {
+                  "health": 97,
+                  "name": "USA squad #1, vehicle #2, soldier #1",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 61,
+              "name": "USA squad #1, soldier #1",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 86,
+              "name": "USA squad #1, soldier #2",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 72,
+              "name": "USA squad #1, soldier #3",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 84,
+              "name": "USA squad #1, soldier #4",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 67,
+              "name": "USA squad #1, soldier #5",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 73,
+              "name": "USA squad #1, soldier #6",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 92,
+              "name": "USA squad #1, soldier #7",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 98,
+              "name": "USA squad #1, soldier #8",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 81,
+              "name": "USA squad #1, soldier #9",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 51,
+              "name": "USA squad #1, soldier #10",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 56,
+              "name": "USA squad #1, soldier #11",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 85,
+              "name": "USA squad #1, soldier #12",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 54,
+              "name": "USA squad #1, soldier #13",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 59,
+              "name": "USA squad #1, soldier #14",
+              "unit_type": "soldier"
+            }
+          ]
+        },
+        {
+          "name": "USA squad #2",
+          "units": [
+            {
+              "health": 265,
+              "name": "USA squad #2, vehicle #1",
+              "operators": [
+                {
+                  "health": 75,
+                  "name": "USA squad #2, vehicle #1, soldier #1",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 320,
+              "name": "USA squad #2, vehicle #2",
+              "operators": [
+                {
+                  "health": 51,
+                  "name": "USA squad #2, vehicle #2, soldier #1",
+                  "unit_type": "soldier"
+                },
+                {
+                  "health": 54,
+                  "name": "USA squad #2, vehicle #2, soldier #2",
+                  "unit_type": "soldier"
+                },
+                {
+                  "health": 78,
+                  "name": "USA squad #2, vehicle #2, soldier #3",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 234,
+              "name": "USA squad #2, vehicle #3",
+              "operators": [
+                {
+                  "health": 75,
+                  "name": "USA squad #2, vehicle #3, soldier #1",
+                  "unit_type": "soldier"
+                },
+                {
+                  "health": 55,
+                  "name": "USA squad #2, vehicle #3, soldier #2",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 352,
+              "name": "USA squad #2, vehicle #4",
+              "operators": [
+                {
+                  "health": 90,
+                  "name": "USA squad #2, vehicle #4, soldier #1",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 514,
+              "name": "USA squad #2, vehicle #5",
+              "operators": [
+                {
+                  "health": 68,
+                  "name": "USA squad #2, vehicle #5, soldier #1",
+                  "unit_type": "soldier"
+                },
+                {
+                  "health": 94,
+                  "name": "USA squad #2, vehicle #5, soldier #2",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 67,
+              "name": "USA squad #2, soldier #1",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 83,
+              "name": "USA squad #2, soldier #2",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 55,
+              "name": "USA squad #2, soldier #3",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 77,
+              "name": "USA squad #2, soldier #4",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 53,
+              "name": "USA squad #2, soldier #5",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 99,
+              "name": "USA squad #2, soldier #6",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 100,
+              "name": "USA squad #2, soldier #7",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 77,
+              "name": "USA squad #2, soldier #8",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 69,
+              "name": "USA squad #2, soldier #9",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 65,
+              "name": "USA squad #2, soldier #10",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 82,
+              "name": "USA squad #2, soldier #11",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 91,
+              "name": "USA squad #2, soldier #12",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 70,
+              "name": "USA squad #2, soldier #13",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 61,
+              "name": "USA squad #2, soldier #14",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 62,
+              "name": "USA squad #2, soldier #15",
+              "unit_type": "soldier"
+            }
+          ]
+        },
+        {
+          "name": "USA squad #3",
+          "units": [
+            {
+              "health": 490,
+              "name": "USA squad #3, vehicle #1",
+              "operators": [
+                {
+                  "health": 83,
+                  "name": "USA squad #3, vehicle #1, soldier #1",
+                  "unit_type": "soldier"
+                },
+                {
+                  "health": 67,
+                  "name": "USA squad #3, vehicle #1, soldier #2",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 453,
+              "name": "USA squad #3, vehicle #2",
+              "operators": [
+                {
+                  "health": 73,
+                  "name": "USA squad #3, vehicle #2, soldier #1",
+                  "unit_type": "soldier"
+                },
+                {
+                  "health": 59,
+                  "name": "USA squad #3, vehicle #2, soldier #2",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 582,
+              "name": "USA squad #3, vehicle #3",
+              "operators": [
+                {
+                  "health": 77,
+                  "name": "USA squad #3, vehicle #3, soldier #1",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 67,
+              "name": "USA squad #3, soldier #1",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 64,
+              "name": "USA squad #3, soldier #2",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 64,
+              "name": "USA squad #3, soldier #3",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 99,
+              "name": "USA squad #3, soldier #4",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 79,
+              "name": "USA squad #3, soldier #5",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 55,
+              "name": "USA squad #3, soldier #6",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 65,
+              "name": "USA squad #3, soldier #7",
+              "unit_type": "soldier"
+            }
+          ]
+        },
+        {
+          "name": "USA squad #4",
+          "units": [
+            {
+              "health": 222,
+              "name": "USA squad #4, vehicle #1",
+              "operators": [
+                {
+                  "health": 55,
+                  "name": "USA squad #4, vehicle #1, soldier #1",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 284,
+              "name": "USA squad #4, vehicle #2",
+              "operators": [
+                {
+                  "health": 83,
+                  "name": "USA squad #4, vehicle #2, soldier #1",
+                  "unit_type": "soldier"
+                },
+                {
+                  "health": 55,
+                  "name": "USA squad #4, vehicle #2, soldier #2",
+                  "unit_type": "soldier"
+                },
+                {
+                  "health": 53,
+                  "name": "USA squad #4, vehicle #2, soldier #3",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 271,
+              "name": "USA squad #4, vehicle #3",
+              "operators": [
+                {
+                  "health": 70,
+                  "name": "USA squad #4, vehicle #3, soldier #1",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 50,
+              "name": "USA squad #4, soldier #1",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 52,
+              "name": "USA squad #4, soldier #2",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 94,
+              "name": "USA squad #4, soldier #3",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 72,
+              "name": "USA squad #4, soldier #4",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 100,
+              "name": "USA squad #4, soldier #5",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 54,
+              "name": "USA squad #4, soldier #6",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 53,
+              "name": "USA squad #4, soldier #7",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 64,
+              "name": "USA squad #4, soldier #8",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 74,
+              "name": "USA squad #4, soldier #9",
+              "unit_type": "soldier"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

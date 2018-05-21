@@ -1,0 +1,549 @@
+{
+  "armies": [
+    {
+      "name": "China",
+      "squads": [
+        {
+          "name": "China squad #1",
+          "units": [
+            {
+              "health": 351,
+              "name": "China squad #1, vehicle #1",
+              "operators": [
+                {
+                  "health": 74,
+                  "name": "China squad #1, vehicle #1, soldier #1",
+                  "unit_type": "soldier"
+                },
+                {
+                  "health": 52,
+                  "name": "China squad #1, vehicle #1, soldier #2",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 580,
+              "name": "China squad #1, vehicle #2",
+              "operators": [
+                {
+                  "health": 81,
+                  "name": "China squad #1, vehicle #2, soldier #1",
+                  "unit_type": "soldier"
+                },
+                {
+                  "health": 87,
+                  "name": "China squad #1, vehicle #2, soldier #2",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 213,
+              "name": "China squad #1, vehicle #3",
+              "operators": [
+                {
+                  "health": 60,
+                  "name": "China squad #1, vehicle #3, soldier #1",
+                  "unit_type": "soldier"
+                },
+                {
+                  "health": 96,
+                  "name": "China squad #1, vehicle #3, soldier #2",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 290,
+              "name": "China squad #1, vehicle #4",
+              "operators": [
+                {
+                  "health": 90,
+                  "name": "China squad #1, vehicle #4, soldier #1",
+                  "unit_type": "soldier"
+                },
+                {
+                  "health": 77,
+                  "name": "China squad #1, vehicle #4, soldier #2",
+                  "unit_type": "soldier"
+                },
+                {
+                  "health": 95,
+                  "name": "China squad #1, vehicle #4, soldier #3",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 67,
+              "name": "China squad #1, soldier #1",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 87,
+              "name": "China squad #1, soldier #2",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 79,
+              "name": "China squad #1, soldier #3",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 82,
+              "name": "China squad #1, soldier #4",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 92,
+              "name": "China squad #1, soldier #5",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 100,
+              "name": "China squad #1, soldier #6",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 92,
+              "name": "China squad #1, soldier #7",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 85,
+              "name": "China squad #1, soldier #8",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 56,
+              "name": "China squad #1, soldier #9",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 76,
+              "name": "China squad #1, soldier #10",
+              "unit_type": "soldier"
+            }
+          ]
+        },
+        {
+          "name": "China squad #2",
+          "units": [
+            {
+              "health": 401,
+              "name": "China squad #2, vehicle #1",
+              "operators": [
+                {
+                  "health": 70,
+                  "name": "China squad #2, vehicle #1, soldier #1",
+                  "unit_type": "soldier"
+                },
+                {
+                  "health": 92,
+                  "name": "China squad #2, vehicle #1, soldier #2",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 523,
+              "name": "China squad #2, vehicle #2",
+              "operators": [
+                {
+                  "health": 99,
+                  "name": "China squad #2, vehicle #2, soldier #1",
+                  "unit_type": "soldier"
+                },
+                {
+                  "health": 97,
+                  "name": "China squad #2, vehicle #2, soldier #2",
+                  "unit_type": "soldier"
+                },
+                {
+                  "health": 60,
+                  "name": "China squad #2, vehicle #2, soldier #3",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 464,
+              "name": "China squad #2, vehicle #3",
+              "operators": [
+                {
+                  "health": 66,
+                  "name": "China squad #2, vehicle #3, soldier #1",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 65,
+              "name": "China squad #2, soldier #1",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 90,
+              "name": "China squad #2, soldier #2",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 97,
+              "name": "China squad #2, soldier #3",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 75,
+              "name": "China squad #2, soldier #4",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 88,
+              "name": "China squad #2, soldier #5",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 50,
+              "name": "China squad #2, soldier #6",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 100,
+              "name": "China squad #2, soldier #7",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 55,
+              "name": "China squad #2, soldier #8",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 81,
+              "name": "China squad #2, soldier #9",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 86,
+              "name": "China squad #2, soldier #10",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 63,
+              "name": "China squad #2, soldier #11",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 65,
+              "name": "China squad #2, soldier #12",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 68,
+              "name": "China squad #2, soldier #13",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 56,
+              "name": "China squad #2, soldier #14",
+              "unit_type": "soldier"
+            }
+          ]
+        },
+        {
+          "name": "China squad #3",
+          "units": [
+            {
+              "health": 256,
+              "name": "China squad #3, vehicle #1",
+              "operators": [
+                {
+                  "health": 65,
+                  "name": "China squad #3, vehicle #1, soldier #1",
+                  "unit_type": "soldier"
+                },
+                {
+                  "health": 59,
+                  "name": "China squad #3, vehicle #1, soldier #2",
+                  "unit_type": "soldier"
+                },
+                {
+                  "health": 73,
+                  "name": "China squad #3, vehicle #1, soldier #3",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 554,
+              "name": "China squad #3, vehicle #2",
+              "operators": [
+                {
+                  "health": 86,
+                  "name": "China squad #3, vehicle #2, soldier #1",
+                  "unit_type": "soldier"
+                },
+                {
+                  "health": 68,
+                  "name": "China squad #3, vehicle #2, soldier #2",
+                  "unit_type": "soldier"
+                },
+                {
+                  "health": 90,
+                  "name": "China squad #3, vehicle #2, soldier #3",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 536,
+              "name": "China squad #3, vehicle #3",
+              "operators": [
+                {
+                  "health": 67,
+                  "name": "China squad #3, vehicle #3, soldier #1",
+                  "unit_type": "soldier"
+                },
+                {
+                  "health": 56,
+                  "name": "China squad #3, vehicle #3, soldier #2",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 571,
+              "name": "China squad #3, vehicle #4",
+              "operators": [
+                {
+                  "health": 84,
+                  "name": "China squad #3, vehicle #4, soldier #1",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 356,
+              "name": "China squad #3, vehicle #5",
+              "operators": [
+                {
+                  "health": 51,
+                  "name": "China squad #3, vehicle #5, soldier #1",
+                  "unit_type": "soldier"
+                },
+                {
+                  "health": 80,
+                  "name": "China squad #3, vehicle #5, soldier #2",
+                  "unit_type": "soldier"
+                },
+                {
+                  "health": 99,
+                  "name": "China squad #3, vehicle #5, soldier #3",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 69,
+              "name": "China squad #3, soldier #1",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 81,
+              "name": "China squad #3, soldier #2",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 56,
+              "name": "China squad #3, soldier #3",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 83,
+              "name": "China squad #3, soldier #4",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 57,
+              "name": "China squad #3, soldier #5",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 88,
+              "name": "China squad #3, soldier #6",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 51,
+              "name": "China squad #3, soldier #7",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 75,
+              "name": "China squad #3, soldier #8",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 69,
+              "name": "China squad #3, soldier #9",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 61,
+              "name": "China squad #3, soldier #10",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 64,
+              "name": "China squad #3, soldier #11",
+              "unit_type": "soldier"
+            }
+          ]
+        },
+        {
+          "name": "China squad #4",
+          "units": [
+            {
+              "health": 213,
+              "name": "China squad #4, vehicle #1",
+              "operators": [
+                {
+                  "health": 82,
+                  "name": "China squad #4, vehicle #1, soldier #1",
+                  "unit_type": "soldier"
+                },
+                {
+                  "health": 80,
+                  "name": "China squad #4, vehicle #1, soldier #2",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 400,
+              "name": "China squad #4, vehicle #2",
+              "operators": [
+                {
+                  "health": 79,
+                  "name": "China squad #4, vehicle #2, soldier #1",
+                  "unit_type": "soldier"
+                },
+                {
+                  "health": 83,
+                  "name": "China squad #4, vehicle #2, soldier #2",
+                  "unit_type": "soldier"
+                },
+                {
+                  "health": 76,
+                  "name": "China squad #4, vehicle #2, soldier #3",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 465,
+              "name": "China squad #4, vehicle #3",
+              "operators": [
+                {
+                  "health": 51,
+                  "name": "China squad #4, vehicle #3, soldier #1",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 98,
+              "name": "China squad #4, soldier #1",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 85,
+              "name": "China squad #4, soldier #2",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 98,
+              "name": "China squad #4, soldier #3",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 59,
+              "name": "China squad #4, soldier #4",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 79,
+              "name": "China squad #4, soldier #5",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 77,
+              "name": "China squad #4, soldier #6",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 89,
+              "name": "China squad #4, soldier #7",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 92,
+              "name": "China squad #4, soldier #8",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 87,
+              "name": "China squad #4, soldier #9",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 91,
+              "name": "China squad #4, soldier #10",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 90,
+              "name": "China squad #4, soldier #11",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 76,
+              "name": "China squad #4, soldier #12",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 73,
+              "name": "China squad #4, soldier #13",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 64,
+              "name": "China squad #4, soldier #14",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 55,
+              "name": "China squad #4, soldier #15",
+              "unit_type": "soldier"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

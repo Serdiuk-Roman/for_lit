@@ -1,14 +1,18 @@
-from abc import ABCMeta
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+from abc import ABCMeta, abstractmethod
 
 
 class Unit(metaclass=ABCMeta):
 
+    @property
     @abstractmethod
     def health(self):
         pass
 
     @abstractmethod
-    def attack(self):
+    def attack_prob(self):
         pass
 
     @abstractmethod

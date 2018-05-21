@@ -1,0 +1,490 @@
+{
+  "armies": [
+    {
+      "name": "Elf",
+      "squads": [
+        {
+          "name": "Elf squad #1",
+          "units": [
+            {
+              "health": 220,
+              "name": "Elf squad #1, vehicle #1",
+              "operators": [
+                {
+                  "health": 98,
+                  "name": "Elf squad #1, vehicle #1, soldier #1",
+                  "unit_type": "soldier"
+                },
+                {
+                  "health": 69,
+                  "name": "Elf squad #1, vehicle #1, soldier #2",
+                  "unit_type": "soldier"
+                },
+                {
+                  "health": 89,
+                  "name": "Elf squad #1, vehicle #1, soldier #3",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 304,
+              "name": "Elf squad #1, vehicle #2",
+              "operators": [
+                {
+                  "health": 55,
+                  "name": "Elf squad #1, vehicle #2, soldier #1",
+                  "unit_type": "soldier"
+                },
+                {
+                  "health": 84,
+                  "name": "Elf squad #1, vehicle #2, soldier #2",
+                  "unit_type": "soldier"
+                },
+                {
+                  "health": 88,
+                  "name": "Elf squad #1, vehicle #2, soldier #3",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 593,
+              "name": "Elf squad #1, vehicle #3",
+              "operators": [
+                {
+                  "health": 94,
+                  "name": "Elf squad #1, vehicle #3, soldier #1",
+                  "unit_type": "soldier"
+                },
+                {
+                  "health": 61,
+                  "name": "Elf squad #1, vehicle #3, soldier #2",
+                  "unit_type": "soldier"
+                },
+                {
+                  "health": 78,
+                  "name": "Elf squad #1, vehicle #3, soldier #3",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 55,
+              "name": "Elf squad #1, soldier #1",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 63,
+              "name": "Elf squad #1, soldier #2",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 82,
+              "name": "Elf squad #1, soldier #3",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 89,
+              "name": "Elf squad #1, soldier #4",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 98,
+              "name": "Elf squad #1, soldier #5",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 58,
+              "name": "Elf squad #1, soldier #6",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 67,
+              "name": "Elf squad #1, soldier #7",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 51,
+              "name": "Elf squad #1, soldier #8",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 77,
+              "name": "Elf squad #1, soldier #9",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 96,
+              "name": "Elf squad #1, soldier #10",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 89,
+              "name": "Elf squad #1, soldier #11",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 94,
+              "name": "Elf squad #1, soldier #12",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 72,
+              "name": "Elf squad #1, soldier #13",
+              "unit_type": "soldier"
+            }
+          ]
+        },
+        {
+          "name": "Elf squad #2",
+          "units": [
+            {
+              "health": 232,
+              "name": "Elf squad #2, vehicle #1",
+              "operators": [
+                {
+                  "health": 57,
+                  "name": "Elf squad #2, vehicle #1, soldier #1",
+                  "unit_type": "soldier"
+                },
+                {
+                  "health": 98,
+                  "name": "Elf squad #2, vehicle #1, soldier #2",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 217,
+              "name": "Elf squad #2, vehicle #2",
+              "operators": [
+                {
+                  "health": 79,
+                  "name": "Elf squad #2, vehicle #2, soldier #1",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 562,
+              "name": "Elf squad #2, vehicle #3",
+              "operators": [
+                {
+                  "health": 52,
+                  "name": "Elf squad #2, vehicle #3, soldier #1",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 314,
+              "name": "Elf squad #2, vehicle #4",
+              "operators": [
+                {
+                  "health": 96,
+                  "name": "Elf squad #2, vehicle #4, soldier #1",
+                  "unit_type": "soldier"
+                },
+                {
+                  "health": 78,
+                  "name": "Elf squad #2, vehicle #4, soldier #2",
+                  "unit_type": "soldier"
+                },
+                {
+                  "health": 51,
+                  "name": "Elf squad #2, vehicle #4, soldier #3",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 86,
+              "name": "Elf squad #2, soldier #1",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 92,
+              "name": "Elf squad #2, soldier #2",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 67,
+              "name": "Elf squad #2, soldier #3",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 63,
+              "name": "Elf squad #2, soldier #4",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 71,
+              "name": "Elf squad #2, soldier #5",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 50,
+              "name": "Elf squad #2, soldier #6",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 90,
+              "name": "Elf squad #2, soldier #7",
+              "unit_type": "soldier"
+            }
+          ]
+        },
+        {
+          "name": "Elf squad #3",
+          "units": [
+            {
+              "health": 464,
+              "name": "Elf squad #3, vehicle #1",
+              "operators": [
+                {
+                  "health": 61,
+                  "name": "Elf squad #3, vehicle #1, soldier #1",
+                  "unit_type": "soldier"
+                },
+                {
+                  "health": 83,
+                  "name": "Elf squad #3, vehicle #1, soldier #2",
+                  "unit_type": "soldier"
+                },
+                {
+                  "health": 64,
+                  "name": "Elf squad #3, vehicle #1, soldier #3",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 258,
+              "name": "Elf squad #3, vehicle #2",
+              "operators": [
+                {
+                  "health": 94,
+                  "name": "Elf squad #3, vehicle #2, soldier #1",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 279,
+              "name": "Elf squad #3, vehicle #3",
+              "operators": [
+                {
+                  "health": 86,
+                  "name": "Elf squad #3, vehicle #3, soldier #1",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 538,
+              "name": "Elf squad #3, vehicle #4",
+              "operators": [
+                {
+                  "health": 79,
+                  "name": "Elf squad #3, vehicle #4, soldier #1",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 98,
+              "name": "Elf squad #3, soldier #1",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 59,
+              "name": "Elf squad #3, soldier #2",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 57,
+              "name": "Elf squad #3, soldier #3",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 100,
+              "name": "Elf squad #3, soldier #4",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 58,
+              "name": "Elf squad #3, soldier #5",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 61,
+              "name": "Elf squad #3, soldier #6",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 54,
+              "name": "Elf squad #3, soldier #7",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 53,
+              "name": "Elf squad #3, soldier #8",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 91,
+              "name": "Elf squad #3, soldier #9",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 84,
+              "name": "Elf squad #3, soldier #10",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 52,
+              "name": "Elf squad #3, soldier #11",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 54,
+              "name": "Elf squad #3, soldier #12",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 54,
+              "name": "Elf squad #3, soldier #13",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 50,
+              "name": "Elf squad #3, soldier #14",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 54,
+              "name": "Elf squad #3, soldier #15",
+              "unit_type": "soldier"
+            }
+          ]
+        },
+        {
+          "name": "Elf squad #4",
+          "units": [
+            {
+              "health": 316,
+              "name": "Elf squad #4, vehicle #1",
+              "operators": [
+                {
+                  "health": 82,
+                  "name": "Elf squad #4, vehicle #1, soldier #1",
+                  "unit_type": "soldier"
+                },
+                {
+                  "health": 96,
+                  "name": "Elf squad #4, vehicle #1, soldier #2",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 302,
+              "name": "Elf squad #4, vehicle #2",
+              "operators": [
+                {
+                  "health": 72,
+                  "name": "Elf squad #4, vehicle #2, soldier #1",
+                  "unit_type": "soldier"
+                },
+                {
+                  "health": 83,
+                  "name": "Elf squad #4, vehicle #2, soldier #2",
+                  "unit_type": "soldier"
+                },
+                {
+                  "health": 52,
+                  "name": "Elf squad #4, vehicle #2, soldier #3",
+                  "unit_type": "soldier"
+                }
+              ],
+              "unit_type": "vehicle"
+            },
+            {
+              "health": 65,
+              "name": "Elf squad #4, soldier #1",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 50,
+              "name": "Elf squad #4, soldier #2",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 94,
+              "name": "Elf squad #4, soldier #3",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 100,
+              "name": "Elf squad #4, soldier #4",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 58,
+              "name": "Elf squad #4, soldier #5",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 85,
+              "name": "Elf squad #4, soldier #6",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 55,
+              "name": "Elf squad #4, soldier #7",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 58,
+              "name": "Elf squad #4, soldier #8",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 85,
+              "name": "Elf squad #4, soldier #9",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 96,
+              "name": "Elf squad #4, soldier #10",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 74,
+              "name": "Elf squad #4, soldier #11",
+              "unit_type": "soldier"
+            },
+            {
+              "health": 77,
+              "name": "Elf squad #4, soldier #12",
+              "unit_type": "soldier"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
