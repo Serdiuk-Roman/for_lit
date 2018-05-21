@@ -66,7 +66,7 @@ class Squad(Unit):
         damag_part = value / len(self.units)
         for unit in self.units:
             unit.health = damag_part
-        print("health", self.name, self.health)
+        # print("health", self.name, self._health)
 
     def attack_prob(self):
         multiplication = 1

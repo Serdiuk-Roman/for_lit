@@ -103,7 +103,7 @@ class Battle_sim():
             defend_armies = [
                 army
                 for army in self.armies
-                # if army != attack_army and army.is_active
+                if army != attack_army  # and army.is_active
             ]
             defend_squads = [
                 squad
