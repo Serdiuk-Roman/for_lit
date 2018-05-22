@@ -36,7 +36,8 @@ from vehicles import Vehicle
 
 
 class Squad(Unit):
-    def __init__(self, name, units):
+    def __init__(self, name, units, clock):
+        self.clock = clock
         self.name = name
         self.units = []
         self._health = None
@@ -46,13 +47,15 @@ class Squad(Unit):
                     unit["name"],
                     unit["health"],
                     unit["unit_type"],
+                    self.clock
                 ))
             elif unit["unit_type"] == "vehicle":
                 self.units.append(Vehicle(
                     unit["name"],
                     unit["health"],
                     unit["unit_type"],
-                    unit["operators"]
+                    unit["operators"],
+                    self.clock
                 ))
         self.strategy = ""
 
@@ -86,7 +89,7 @@ class Squad(Unit):
 
         attack_success = self.attack_prob()
         defend_success = enemy.attack_prob()
-        # print(attack_success, "vs", defend_success)
+        print(attack_success, "vs", defend_success)
         if attack_success > defend_success:
             # damage to health
             print(
@@ -97,9 +100,10 @@ class Squad(Unit):
                 enemy.name,
                 round(enemy.health)
             )
-            enemy.health = self.damage
+            enemy.health = self.damage * attack_success
             for unit in self.units:
                 unit.level_up()
+                unit.start_recharge()
         else:
             print(
                 "wrong",
@@ -116,7 +120,7 @@ class Squad(Unit):
             unit.damage
             for unit in self.units
         ])
-        # print(full_damage)
+        print("full_damage : ", full_damage)
         return full_damage
 
     def is_alive(self):
@@ -127,9 +131,8 @@ class Squad(Unit):
         ]
         return len(self.units) > 0
 
-    @property
     def is_active(self):
-        return True
+        return True in [unit.is_active() for unit in self.units]
 
 
 if __name__ == '__main__':

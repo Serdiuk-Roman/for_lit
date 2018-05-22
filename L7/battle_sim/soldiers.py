@@ -7,12 +7,14 @@ from random import randint
 
 
 class Soldier(Unit):
-    def __init__(self, name, health, unit_type):
+    def __init__(self, name, health, unit_type, clock):
+        self.clock = clock
         self.name = name
         self._health = health
         self.unit_type = unit_type
         self.experience = 0  # 0 - 50
         self.recharge = randint(100, 200)
+        self.end_recharge_time = 0
 
     @property
     def health(self):
@@ -25,7 +27,7 @@ class Soldier(Unit):
     def attack_prob(self):
         success_prob = (
             0.5 * (1 + self.health / 100) *
-            randint(50 + self.experience, 100) / 100
+            randint(round(50 + self.experience), 100) / 100
         )
         return success_prob
 
@@ -36,17 +38,17 @@ class Soldier(Unit):
     def is_alive(self):
         return self.health > 0
 
+    def start_recharge(self):
+        self.end_recharge_time = self.clock.time() + self.recharge
+
     def is_active(self):
-        return True
+        return self.clock.time() > self.end_recharge_time
 
     def level_up(self):
         # print("soldat_exp ", self.experience)
         if self.experience > 50:
             return
         self.experience += 0.1
-
-    # def recharge(self):
-        # pass
 
 
 if __name__ == '__main__':

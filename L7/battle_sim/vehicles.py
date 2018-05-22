@@ -67,18 +67,21 @@ from soldiers import Soldier
 
 
 class Vehicle(Unit):
-    def __init__(self, name, health, unit_type, operators):
+    def __init__(self, name, health, unit_type, operators, clock):
+        self.clock = clock
         self.name = name
         self._health = health
         self.unit_type = unit_type
         self.experience = 0  # 0 - 50
         self.recharge = randint(1000, 2000)
+        self.end_recharge_time = 0
         self.operators = []
         for operator in operators:
             self.operators.append(Soldier(
                 operator["name"],
                 operator["health"],
-                operator["unit_type"]
+                operator["unit_type"],
+                self.clock
             ))
 
     @property
@@ -135,11 +138,19 @@ class Vehicle(Unit):
                 return True
         return False
 
+    def start_recharge(self):
+        self.end_recharge_time = self.clock.time() + self.recharge
+        for operator in self.operators:
+            operator.start_recharge()
+
     def is_active(self):
-        return True
+        if self.clock.time() > self.end_recharge_time:
+            return True in [unit.is_active() for unit in self.operators]
+        else:
+            return False
 
     def level_up(self):
-        print("vehicle_exp ", self.experience)
+        # print("vehicle_exp ", self.experience)
         if self.experience > 50:
             return
         self.experience += 0.1

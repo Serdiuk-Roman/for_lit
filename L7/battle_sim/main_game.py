@@ -8,7 +8,8 @@ from Armies import Army
 
 
 class Battle_sim():
-    def __init__(self):
+    def __init__(self, clock):
+        self.clock = clock
         self.armies = []
         self.losers = []
         self.gen_list = [
@@ -53,6 +54,7 @@ class Battle_sim():
                 self.armies.append(Army(
                     input_data["armies"][0]["name"],
                     input_data["armies"][0]["squads"],
+                    self.clock
                 ))
 
         # add strategy
@@ -87,53 +89,70 @@ class Battle_sim():
     def start_game(self):
         print("START GAME")
         while True:
-            for army in self.armies:
-                print(army.name, "::", army.health)
+            self.clock.tick()
+            try:
+                # for army in self.armies:
+                #     print(army.name, "::", army.health)
 
-            for army in self.losers:
-                print(army.name, "#")
+                # for army in self.losers:
+                #     print(army.name, "#")
 
-            attack_army = choice(list(
-                army
-                for army in self.armies
-                if army.is_active
-            ))
-            attack_squad = choice(list(
-                squad
-                for squad in attack_army.squads
-                if squad.is_active
-            ))
-            defend_armies = [
-                army
-                for army in self.armies
-                if army != attack_army
-            ]
-            defend_squads = [
-                squad
-                for army in defend_armies
-                for squad in army.squads
-            ]
-            attack_squad.attack(defend_squads, attack_army.strategy)
+                attack_army = choice(list(
+                    army
+                    for army in self.armies
+                    if army.is_active()
+                ))
+                attack_squad = choice(list(
+                    squad
+                    for squad in attack_army.squads
+                    if squad.is_active()
+                ))
+                defend_armies = [
+                    army
+                    for army in self.armies
+                    if army != attack_army
+                ]
+                defend_squads = [
+                    squad
+                    for army in defend_armies
+                    for squad in army.squads
+                ]
+                attack_squad.attack(defend_squads, attack_army.strategy)
 
-            # clear list of armies
-            losers_army = [
-                army
-                for army in self.armies
-                if not army.is_alive()
-            ]
-            self.losers.extend(losers_army)
-            self.armies = [
-                army
-                for army in self.armies
-                if army.is_alive()
-            ]
+                # clear list of armies
+                losers_army = [
+                    army
+                    for army in self.armies
+                    if not army.is_alive()
+                ]
+                self.losers.extend(losers_army)
+                self.armies = [
+                    army
+                    for army in self.armies
+                    if army.is_alive()
+                ]
+            except IndexError:
+                print("\nrecharge\n")
 
             if len(self.armies) == 1:
                 break
-        print(self.armies.pop().name, "WIN")
+        print(self.armies[0].name, "WIN")
+        print("tick ", self.clock.time())
+
+
+class Clock:
+    def __init__(self):
+        self.i = 0
+
+    def tick(self):
+        self.i += 1
+
+    def time(self):
+        return self.i
 
 
 if __name__ == "__main__":
-    test_game = Battle_sim()
+    clock = Clock()
+    test_game = Battle_sim(clock)
     test_game.init_armies()
     test_game.start_game()
