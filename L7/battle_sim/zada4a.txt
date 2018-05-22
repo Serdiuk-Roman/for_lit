@@ -160,7 +160,7 @@ The damage received on a successful attack is distributed evenly to all squad me
 Пошкодження, отримане від успішної атаки, рівномірно розподіляється серед усіх членів команди.
 
 The damage inflicted on a successful attack is the accumulation of the damage inflicted by each squad member.
-Пошкодження, завдане успішній атаці, - це накопичення пошкодженнь, завданої кожним членом команди.
+Пошкодження, завдане при успішній атаці - це накопичення пошкодженнь, завданої кожним членом команди.
 
 ## Attacking & Defending
 ## Атака та захист

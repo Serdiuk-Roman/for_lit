@@ -67,12 +67,11 @@ from soldiers import Soldier
 
 
 class Vehicle(Unit):
-
     def __init__(self, name, health, unit_type, operators):
         self.name = name
         self._health = health
         self.unit_type = unit_type
-        self.experience = 0.01
+        self.experience = 0  # 0 - 50
         self.recharge = randint(1000, 2000)
         self.operators = []
         for operator in operators:
@@ -82,12 +81,16 @@ class Vehicle(Unit):
                 operator["unit_type"]
             ))
 
-    def add_operator(self, soldier):
-        self.operators.append(soldier)
-
     @property
     def health(self):
-        return self._health
+        operators_health = sum([
+            operator.health
+            for operator in self.operators
+        ])
+        total_health = (
+            (operators_health + self._health) / (len(self.operators) + 1)
+        )
+        return total_health
 
     @health.setter
     def health(self, value):
@@ -101,16 +104,6 @@ class Vehicle(Unit):
         random_operator = choice(self.operators)
         random_operator.health = 0.1 * value
 
-    def is_alive(self):
-        if not self.health:
-            for soldier in self.operators:
-                soldier.health = 0
-            return False
-        else:
-            for soldier in self.operators:
-                return soldier.is_alive()
-        return False
-
     def attack_prob(self):
         # ganv_op = gavg(operators.attack_success)
         multiplication = 1
@@ -120,9 +113,39 @@ class Vehicle(Unit):
         success_prob = 0.5 * (1 + self.health / 100) * ganv_op
         return success_prob
 
+    @property
     def damage(self):
         oper_exp = [
             soldier.experience / 100
             for soldier in self.operators
         ]
         return 0.1 + sum(oper_exp)
+
+    def is_alive(self):
+        self.operators = [
+            operator
+            for operator in self.operators
+            if operator.is_alive()
+        ]
+        if not self.health:
+            for operator in self.operators:
+                operator._health = 0
+        else:
+            if len(self.operators) > 0:
+                return True
+        return False
+
+    def is_active(self):
+        return True
+
+    def level_up(self):
+        print("vehicle_exp ", self.experience)
+        if self.experience > 50:
+            return
+        self.experience += 0.1
+        for operator in self.operators:
+            operator.level_up()
+
+
+if __name__ == '__main__':
+    pass

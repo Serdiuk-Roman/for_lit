@@ -90,6 +90,9 @@ class Battle_sim():
             for army in self.armies:
                 print(army.name, "::", army.health)
 
+            for army in self.losers:
+                print(army.name, "#")
+
             attack_army = choice(list(
                 army
                 for army in self.armies
@@ -103,20 +106,28 @@ class Battle_sim():
             defend_armies = [
                 army
                 for army in self.armies
-                if army != attack_army  # and army.is_active
+                if army != attack_army
             ]
             defend_squads = [
                 squad
                 for army in defend_armies
                 for squad in army.squads
-                # if squad.is_active
             ]
             attack_squad.attack(defend_squads, attack_army.strategy)
-            for army in self.armies:
-                if army.health == 0:
-                    army_index = self.armies.index(army)
-                    los_army = self.armies.pop(army_index)
-                    self.losers.append(los_army)
+
+            # clear list of armies
+            losers_army = [
+                army
+                for army in self.armies
+                if not army.is_alive()
+            ]
+            self.losers.extend(losers_army)
+            self.armies = [
+                army
+                for army in self.armies
+                if army.is_alive()
+            ]
+
             if len(self.armies) == 1:
                 break
         print(self.armies.pop().name, "WIN")

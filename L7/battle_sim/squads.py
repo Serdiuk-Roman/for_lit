@@ -90,23 +90,42 @@ class Squad(Unit):
         if attack_success > defend_success:
             # damage to health
             print(
-                self.name,
-                self.health,
                 strategy,
+                self.name,
+                round(self.health),
                 "-->",
                 enemy.name,
-                enemy.health
+                round(enemy.health)
             )
-            enemy.health = 1000
+            enemy.health = self.damage
+            for unit in self.units:
+                unit.level_up()
         else:
-            print("wrong")
-
-    def damage(self):
-        pass
+            print(
+                "wrong",
+                self.name,
+                round(self.health),
+                "-->",
+                enemy.name,
+                round(enemy.health)
+            )
 
     @property
+    def damage(self):
+        full_damage = sum([
+            unit.damage
+            for unit in self.units
+        ])
+        # print(full_damage)
+        return full_damage
+
     def is_alive(self):
-        return sum([unit.alive for unit in self.units]) > 0
+        self.units = [
+            unit
+            for unit in self.units
+            if unit.is_alive()
+        ]
+        return len(self.units) > 0
 
     @property
     def is_active(self):

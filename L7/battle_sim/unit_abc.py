@@ -15,23 +15,17 @@ class Unit(metaclass=ABCMeta):
     def attack_prob(self):
         pass
 
+    @property
     @abstractmethod
     def damage(self):
         pass
 
-    @property
     @abstractmethod
     def is_alive(self):
         pass
 
     def recharge(self):
         pass
-
-    def teek(self):
-        pass
-
-
-    # attack_power
 
     # если речардж достиг нуля то
     # можна брать юнита и атаковать

@@ -22,9 +22,13 @@ class Army():
     def health(self):
         return sum([squad.health for squad in self.squads])
 
-    @property
     def is_alive(self):
-        return sum([squad.alive for squad in self.squads]) > 0
+        self.squads = [
+            squad
+            for squad in self.squads
+            if squad.is_alive()
+        ]
+        return len(self.squads) > 0
 
     @property
     def is_active(self):

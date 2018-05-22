@@ -29,6 +29,7 @@ class Soldier(Unit):
         )
         return success_prob
 
+    @property
     def damage(self):
         return 0.05 + self.experience / 100
 
@@ -37,6 +38,12 @@ class Soldier(Unit):
 
     def is_active(self):
         return True
+
+    def level_up(self):
+        # print("soldat_exp ", self.experience)
+        if self.experience > 50:
+            return
+        self.experience += 0.1
 
     # def recharge(self):
         # pass
