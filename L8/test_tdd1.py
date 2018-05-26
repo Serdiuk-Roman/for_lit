@@ -57,5 +57,6 @@ class TestStringMethods(TestCase):
 
     # зделать тест с логированием
 
+
 if __name__ == '__main__':
     main()
