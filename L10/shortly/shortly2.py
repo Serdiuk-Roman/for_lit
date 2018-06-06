@@ -1,12 +1,5 @@
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
-    shortly
-    ~~~~~~~
-    A simple URL shortener using Werkzeug and redis.
-    :copyright: (c) 2014 by the Werkzeug Team, see AUTHORS for more details.
-    :license: BSD, see LICENSE for more details.
-"""
-
 
 import os
 import redis
@@ -17,6 +10,11 @@ from werkzeug.exceptions import HTTPException, NotFound
 from werkzeug.wsgi import SharedDataMiddleware
 from werkzeug.utils import redirect
 from jinja2 import Environment, FileSystemLoader
+
+
+def is_valid_url(url):
+    parts = urlparse(url)
+    return parts.scheme in ('http', 'https')
 
 
 def base36_encode(number):
@@ -30,64 +28,20 @@ def base36_encode(number):
     return ''.join(reversed(base36))
 
 
-def is_valid_url(url):
-    parts = urlparse(url)
-    return parts.scheme in ('http', 'https')
-
-
-def get_hostname(url):
-    return urlparse(url).netloc
-
-
 class Shortly():
+    """docstring for Shortly"""
 
     def __init__(self, config):
+        super(Shortly,).__init__()
         self.redis = redis.Redis(config['redis_host'], config['redis_port'])
         template_path = os.path.join(os.path.dirname(__file__), 'templates')
         self.jinja_env = Environment(loader=FileSystemLoader(template_path),
                                      autoescape=True)
-        self.jinja_env.filters['hostname'] = get_hostname
-
         self.url_map = Map([
             Rule('/', endpoint='new_url'),
             Rule('/<short_id>', endpoint='follow_short_link'),
-            Rule('/<short_id>+', endpoint='short_link_details')
+            Rule('/<short_id>+', endpoint='short_link_details'),
         ])
-
-    def on_new_url(self, request):
-        error = None
-        url = ''
-        if request.method == 'POST':
-            url = request.form['url']
-            if not is_valid_url(url):
-                error = 'Please enter a valid URL'
-            else:
-                short_id = self.insert_url(url)
-                return redirect('/%s+' % short_id)
-        return self.render_template('new_url.html', error=error, url=url)
-
-    def on_follow_short_link(self, request, short_id):
-        link_target = self.redis.get('url-target:' + short_id)
-        if link_target is None:
-            raise NotFound()
-        self.redis.incr('click-count:' + short_id)
-        return redirect(link_target)
-
-    def on_short_link_details(self, request, short_id):
-        link_target = self.redis.get('url-target:' + short_id)
-        if link_target is None:
-            raise NotFound()
-        click_count = int(self.redis.get('click-count:' + short_id) or 0)
-        return self.render_template('short_link_details.html',
-                                    link_target=link_target,
-                                    short_id=short_id,
-                                    click_count=click_count
-                                    )
-
-    def error_404(self):
-        response = self.render_template('404.html')
-        response.status_code = 404
-        return response
 
     def insert_url(self, url):
         short_id = self.redis.get('reverse-url:' + url)
@@ -103,13 +57,55 @@ class Shortly():
         t = self.jinja_env.get_template(template_name)
         return Response(t.render(context), mimetype='text/html')
 
+    def on_new_url(self, request):
+        error = None
+        url = ''
+        if request.method == 'POST':
+            url = request.form['url']
+            if not is_valid_url(url):
+                error = 'Please enter a valid URL'
+            else:
+                short_id = self.insert_url(url)
+                return redirect('/{}'.format(short_id))
+        else:
+            r = self.redis.keys("url-target:*")
+            keys = [key.decode().split(':')[1] for key in r]
+            all_el = [
+                [key, self.redis.get('url-target:' + key).decode()]
+                for key in keys
+            ]
+            return self.render_template(
+                'new_url.html',
+                error=error,
+                url=url,
+                all_el=all_el
+            )
+
+    def on_follow_short_link(self, request, short_id):
+        link_target = self.redis.get('url-target:' + short_id)
+        if link_target is None:
+            raise NotFound()
+        self.redis.incr('click-count:' + short_id)
+        return redirect(link_target)
+
+    def on_short_link_details(self, request, short_id):
+        link_target = self.redis.get('url-target:' + short_id)
+        if link_target is None:
+            raise NotFound()
+        click_count = int(self.redis.get('click-count:' + short_id) or 0)
+        return self.render_template(
+            'short_link_details.html',
+            link_target=link_target,
+            short_id=short_id,
+            click_count=click_count
+        )
+
     def dispatch_request(self, request):
         adapter = self.url_map.bind_to_environ(request.environ)
         try:
+            # print("adapter", adapter.match())
             endpoint, values = adapter.match()
             return getattr(self, 'on_' + endpoint)(request, **values)
-        except NotFound as e:
-            return self.error_404()
         except HTTPException as e:
             return e
 

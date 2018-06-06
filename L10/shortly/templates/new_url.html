@@ -10,4 +10,10 @@
       <input type=text name=url value="{{ url }}" class=urlinput>
       <input type=submit value="Shorten">
   </form>
+  <h2>link in base</h2>
+  <ul>
+  {% for key in all_el %}
+  	<li><a href="/{{ key[0] }}">/{{ key[0] }}</a><span>: {{ key[1] }}</span></li>
+  {% endfor %}
+  </ul>
 {% endblock %}

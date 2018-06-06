@@ -170,5 +170,8 @@ venv.bak/
 # End of https://www.gitignore.io/api/python,pycharm
 
 env/
+tenv/
+
+Utils/
 
 redis-4.0.9/

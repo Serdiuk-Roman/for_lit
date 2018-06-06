@@ -1,4 +1,4 @@
-from flask import Flask, jsonify, request
+ from flask import Flask, jsonify, request
 
 
 tasks = [
@@ -30,7 +30,7 @@ def hello():
     return 'Hello, World'
 
 
-@app.route('/todo/api/tasks',methods=['GET'])
+@app.route('/todo/api/tasks', methods=['GET'])
 def todo():
     return jsonify({"tasks": tasks})
 
@@ -53,7 +53,7 @@ def add_task():
         "id": len(tasks) - 1,
         "title": content["title"],
         "description": content["description"],
-        # "done": False
+        "done": False
     }
     print(tasks)
     return jsonify({"tasks": tasks[len(tasks) - 1]})
