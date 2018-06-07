@@ -3,14 +3,17 @@
 {% block title %}Main{% endblock %}
 
 {% block body %}
+
   <div class="row">
     <div class="col-md-6">
       <h1>Advertisements list</h1>
-      <ul>
-        {% for el in boards %}
-          <li>{{ el[0] }}:{{ el[1] }}:{{ el[2] }}:{{ el[3] }}</li>
-        {% endfor %}
-      </ul>
+      {% if boards %}
+        <ul>
+          {% for i in range(boards| length) %}
+            <li><a href="/{{ keys[i] }}">{{ boards[i] }}</a></li>
+          {% endfor %}
+        </ul>
+      {% endif %}
     </div>
     <div class="col-md-6">
       <h1>Add new advertisement</h1>
@@ -21,11 +24,11 @@
         <div class="form-group">
           <label for="creator">Username</label>
           <input type="text" class="form-control" id="creator"
-          name="creator" placeholder="Elvis" required="" value="{{ values[0] }}">
+          name="creator" placeholder="Elvis   (max 30 char.)" required="" value="{{ values[1] }}">
         </div>
         <div class="form-group">
           <label for="board_name">Board_name</label>
-          <input type="text" class="form-control" id="board_name" name="board_name" placeholder="bla bla bla" required="" value="{{ values[1] }}">
+          <input type="text" class="form-control" id="board_name" name="board_name" placeholder="bla bla bla   (max 50 char.)" required="" value="{{ values[0] }}">
         </div>
         <br>
         <div>
