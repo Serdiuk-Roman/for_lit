@@ -1,4 +1,7 @@
- from flask import Flask, jsonify, request
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+from flask import Flask, jsonify, request
 
 
 tasks = [
@@ -44,7 +47,6 @@ def show_post(post_id):
 def add_task():
     print("656666666666")
     print(request.method)
-    
     content = request.get_json()
     print(content)
 

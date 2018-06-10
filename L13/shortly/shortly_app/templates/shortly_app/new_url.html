@@ -1,0 +1,25 @@
+{% extends "shortly_app/base.html" %}
+
+{% block title %}Create New Short URL{% endblock %}
+
+{% block body %}
+  <h2>Submit URL</h2>
+  <form action="/shortly/new_url/" method='post'>
+    {% csrf_token %}
+    <p>URL:
+      <input type="text" name="url" value="{{ url }}" class="urlinput">
+      <button type="submit">Shorten</button>
+  </form>
+  {% if all_el %}
+    <h2>link in base</h2>
+    <ul>
+    {% for el in all_el %}
+      <li>
+        <a href="/shortly/follow/{{el.url_id}}">/{{el.url_id}}</a>
+        <span>: </span>
+        <a href="/shortly/detail/{{el.url_id}}">detail</a>
+      </li>
+    {% endfor %}
+    </ul>
+  {% endif %}
+{% endblock %}

@@ -12,8 +12,13 @@
   </form>
   <h2>link in base</h2>
   <ul>
+    <p>id : detail link</p>
   {% for key in all_el %}
-  	<li><a href="/{{ key[0] }}">/{{ key[0] }}</a><span>: {{ key[1] }}</span></li>
+  	<li>
+      <a href="/{{ key[0] }}">/{{ key[0] }}</a>
+      <span>: </span>
+      <a href="/{{ key[0] }}+">{{ key[1] }}</a>
+    </li>
   {% endfor %}
   </ul>
 {% endblock %}

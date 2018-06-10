@@ -71,7 +71,7 @@ class Shortly():
             r = self.redis.keys("url-target:*")
             keys = [key.decode().split(':')[1] for key in r]
             all_el = [
-                [key, self.redis.get('url-target:' + key).decode()]
+                [key, self.redis.get('url-target:' + key).decode('utf-8')]
                 for key in keys
             ]
             return self.render_template(
@@ -89,7 +89,7 @@ class Shortly():
         return redirect(link_target)
 
     def on_short_link_details(self, request, short_id):
-        link_target = self.redis.get('url-target:' + short_id)
+        link_target = self.redis.get('url-target:' + short_id).decode('utf-8')
         if link_target is None:
             raise NotFound()
         click_count = int(self.redis.get('click-count:' + short_id) or 0)
