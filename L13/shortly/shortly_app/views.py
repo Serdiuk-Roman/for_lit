@@ -7,11 +7,11 @@ from .models import Shortly
 
 
 def index(request, error=None):
-    all_el = Shortly.objects.all()
+    popul = Shortly.objects.filter(click_count__gte=5).order_by('-click_count')
     return render(
         request,
         'shortly_app/new_url.html',
-        {'all_el': all_el, 'error': error}
+        {'all_el': popul, 'error': error}
     )
 
 
