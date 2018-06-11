@@ -38,7 +38,7 @@ def follow_link(request, url_id):
     except Shortly.DoesNotExist:
         return redirect('/shortly/http404')
     link.click_count += 1
-    link.save()
+    link.save(update_fields=['click_count'])
     return redirect('{}'.format(link.url_target))
 
 
