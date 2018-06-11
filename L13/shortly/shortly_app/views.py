@@ -20,18 +20,14 @@ def new_url(request):
         url = request.POST.get('url')
         try:
             link_in_db = Shortly.objects.get(url_target=url)
+            url_id = link_in_db.url_id
         except Shortly.DoesNotExist:
-            link_in_db = False
-            print("except")
-        if not link_in_db:
             short = Shortly(
                 url_target=url,
                 click_count=0
             )
             short.save()
             url_id = Shortly.objects.get(url_target=url).url_id
-        else:
-            url_id = link_in_db.url_id
         return redirect('/shortly/detail/{}'.format(url_id))
     return redirect('/shortly')
 
