@@ -18,4 +18,3 @@ class Task(models.Model):
     class Meta:
         verbose_name = 'one name'
         verbose_name_plural = 'plural name'
-        # Unique_together = ['text', 'checked']

@@ -15,7 +15,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from django.conf.urls import url
+from django.conf import settings
+from django.conf.urls import include, url
 
 from my_app import views
 
@@ -26,3 +27,9 @@ urlpatterns = [
     url(r'^tasks/create$', views.create_task, name='create_task'),
     url(r'^tasks/(?P<pk>[0-9a-f\-]+)$', views.task_detail, name='task_detail'),
 ]
+
+if settings.DEBUG:
+    import debug_toolbar
+    urlpatterns = [
+        url(r'^__debug__/', include(debug_toolbar.urls)),
+    ] + urlpatterns
