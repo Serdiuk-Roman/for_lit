@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}{{ board_id }} detail{% endblock %}
+
+{% block body %}
+
+   <div class="row justify-content-md-center">
+    <div class="col-md-6">
+      <h2>Board name: {{ values[0] }}</h2>
+      <h2>Creator: {{ values[1] }}</h2>
+      <h6>Date Time: {{ values[2] }}</h6>
+      <hr / color="#007bff">
+      <form action="/add_comment/for_{{ values[3] }}">
+        <button type="submit" class="btn btn-primary btn-block">Add comment</button>
+      </form>
+      <hr / color="#007bff">
+      {% for com in comments %}
+        <p><b>{{ com[1] }}</b> write <i>"{{ com[0] }}"</i></p>
+      {% endfor %}
+    </div>
+  </div>
+
+{% endblock %}

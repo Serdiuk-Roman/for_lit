@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block title %}add comment{% endblock %}
+
+{% block body %}
+
+   <div class="row justify-content-md-center">
+    <div class="col-md-6">
+      <h1>Add comment for {{ board_id }} board</h1>
+      <form action="/add_comment/for_{{ board_id }}" method='post'>
+        {% if error %}
+          <p class=error><strong>Error:</strong> {{ error }}
+        {% endif %}
+        <div class="form-group">
+          <label for="creator">Username</label>
+          <input type="text" class="form-control" id="creator"
+          name="comment_creator" placeholder="Elvis   (max 30 char.)" required="" value="{{ values[1] }}" autofocus>
+        </div>
+        <div class="form-group">
+          <label for="comment">Comment</label>
+          <textarea class="form-control" rows="7" id="comment" name="comment" placeholder="bla bla bla   (max 255 char.)" maxlength="255" required>{{ values[0] }}</textarea>
+        </div>
+        <br>
+        <div>
+          <button type="submit" class="btn btn-primary btn-block">Add</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+{% endblock %}
