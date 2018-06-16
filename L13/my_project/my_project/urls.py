@@ -18,14 +18,16 @@ from django.urls import path
 from django.conf import settings
 from django.conf.urls import include, url
 
+
 from my_app import views
+from my_app.views import IndexView
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    url(r'^tasks/$', views.index, name='index'),
-    url(r'^tasks/create$', views.create_task, name='create_task'),
-    url(r'^tasks/(?P<pk>[0-9a-f\-]+)$', views.task_detail, name='task_detail'),
+    url(r'^tasks/$', IndexView.as_view()),
+    url(r'^tasks/create$', IndexView.as_view()),
+    url(r'^tasks/(?P<pk>[0-9a-f\-]+)$', views.task_detail),
 ]
 
 if settings.DEBUG:

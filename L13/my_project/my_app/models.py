@@ -13,6 +13,7 @@ class Task(models.Model):
         # default=False,
         # verbose_name='Check',
         # unique=False
+        # validators=...
     )
 
     class Meta:
