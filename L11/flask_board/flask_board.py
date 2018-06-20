@@ -15,15 +15,16 @@ app = Flask(__name__)
 redis_db = redis.Redis('localhost', 6379)
 
 
-def base36_encode(number):
+def base62_encode(number):
     assert number >= 0, 'positive integer required'
     if number == 0:
         return '0'
-    base36 = []
+    base62 = []
+    chars = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
     while number != 0:
-        number, i = divmod(number, 36)
-        base36.append('0123456789abcdefghijklmnopqrstuvwxyz'[i])
-    return ''.join(reversed(base36))
+        number, i = divmod(number, 62)
+        base62.append(chars[i])
+    return ''.join(reversed(base62))
 
 
 def insert_comment(values, board_id):
@@ -36,12 +37,6 @@ def insert_comment(values, board_id):
     unpacked_comments.append(values)
     insert_value = json.dumps(unpacked_comments)
     redis_db.set('comments:board:' + board_id, insert_value)
-
-
-# @app.route('/')
-# def index():
-#     values = []
-#     return render_template('board.html', values=values)
 
 
 @app.route('/')
@@ -82,7 +77,7 @@ def add_board():
     dt = str(datetime.now()).split('.')[0]
 
     board_num = redis_db.incr('last-board-id')
-    board_id = base36_encode(board_num)
+    board_id = base62_encode(board_num)
 
     redis_db.set('board:' + board_id, board_name)
     redis_db.set('creator:board:' + board_id, creator)
@@ -137,11 +132,13 @@ def add_comment(board_id):
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     if request.method == 'POST':
-        pass
-        # return do_the_login()
+        return 'login'
     else:
-        pass
-        # return show_the_login_form()
+        values = []
+        return render_template(
+            'signup.html',
+            values=values
+        )
 
 
 if __name__ == '__main__':
