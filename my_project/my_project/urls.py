@@ -20,14 +20,18 @@ from django.conf.urls import include, url
 
 
 from my_app import views
-from my_app.views import IndexView
+from my_app.views import IndexView, TaskListView, TaskDetailView, TaskFormView
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    url(r'^tasks/$', IndexView.as_view()),
-    url(r'^tasks/create$', IndexView.as_view()),
-    url(r'^tasks/(?P<pk>[0-9a-f\-]+)$', views.task_detail),
+    # url(r'^tasks/$', IndexView.as_view()),
+    url(r'^tasks/$', TaskListView.as_view(template_name="my_app/index.html")),
+    url(r'^tasks/create$', TaskFormView.as_view()),
+    # url(r'^tasks/<pk>$', UpdateView.as_view()),
+    # url(r'^tasks/<pk>/delete$', DeleteView.as_view()),
+    # url(r'^tasks/add$', CreateView.as_view()),
+    url(r'^tasks/(?P<pk>[0-9a-f\-]+)$', TaskDetailView.as_view(template_name="my_app/detail.html")),
 ]
 
 if settings.DEBUG:

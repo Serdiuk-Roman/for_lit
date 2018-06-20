@@ -1,36 +1,13 @@
 from django.shortcuts import render, redirect
 # from django.http import HttpResponse
-from django.views.generic import TemplateView as View
+from django.views.generic import TemplateView
+
+from django.views.generic.list import ListView
+from django.views.generic.detail import DetailView
+from django.views.generic.edit import FormView
 
 from .models import Task
-from .forms import TaskModelForm
-
-# Create your views here.
-
-
-# def index(request):
-#     tasks = Task.objects.all()
-
-#     return render(
-#         request,
-#         'my_app/index.html',
-#         {'tasks': tasks, 'form': TaskModelForm()}
-#     )
-
-
-# def create_task(request):
-#     if request.method == 'POST':
-#         form = TaskModelForm(request.POST)
-#         if form.is_valid():
-#             form.save()
-#             return redirect('/tasks')
-#         tasks = Task.objects.all()
-#         return render(
-#             request,
-#             'my_app/index.html',
-#             {'tasks': tasks, 'form': form}
-#         )
-#     return redirect('/tasks')
+from .forms import TaskModelForm, TaskForm
 
 
 def task_detail(request, pk):
@@ -54,7 +31,7 @@ def task_detail(request, pk):
     )
 
 
-class IndexView(View):
+class IndexView(TemplateView):
 
     def get(self, request, *args, **kwarg):
         tasks = Task.objects.all()
@@ -77,3 +54,21 @@ class IndexView(View):
                 {'tasks': tasks, 'form': form}
             )
         return redirect('/tasks')
+
+
+class TaskListView(ListView):
+    model = Task
+
+    def get_context_data(self):
+        context = super().get_context_data()
+        context['form'] = TaskModelForm()
+        return context
+
+
+class TaskDetailView(DetailView):
+    model = Task
+
+
+class TaskFormView(FormView):
+    template_name = 'my_app/contact.html'
+    form_class = TaskForm

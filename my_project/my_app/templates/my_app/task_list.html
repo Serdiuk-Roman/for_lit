@@ -1,0 +1,35 @@
+<body>
+
+<h1>Tasks</h1>
+<ul>
+{{ object_list }}
+</ul>
+
+<ul>
+	{% for task in object_list %}
+	<li>{{ task.text }}</li>
+	{% endfor %}
+</ul>
+
+
+<ul>
+    
+    {% for task in object_list %}
+        <li><input type="checkbox"
+        {% if task.checked %}checked
+        {% endif %}>
+        <a href="/tasks/{{ task.id }}">{{ task.text }}</a>
+
+        </li>
+    {% endfor %}
+
+</ul>
+
+
+<form method="post">
+    {% csrf_token %}
+    {{ form }}
+    <button type="submit">Sub</button>
+</form>
+
+</body>

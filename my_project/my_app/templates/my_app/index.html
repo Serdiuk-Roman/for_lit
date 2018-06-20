@@ -1,7 +1,7 @@
 <body>
 <ul>
     
-    {% for task in tasks %}
+    {% for task in object_list %}
         <li><input type="checkbox"
         {% if task.checked %}checked
         {% endif %}>
