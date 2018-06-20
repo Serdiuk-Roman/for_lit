@@ -12,10 +12,9 @@
 
 </ul>
 
-<form method="post" action="/tasks/create">
+<form method="post">
     {% csrf_token %}
-    <input type="checkbox" name="checked">
-    <input type="text" name="text">
+    {{ form }}
     <button type="submit">Sub</button>
 </form>
 </body>
