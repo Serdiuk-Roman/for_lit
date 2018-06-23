@@ -19,8 +19,8 @@ from django.conf import settings
 from django.conf.urls import include, url
 
 
-from my_app import views
-from my_app.views import IndexView, TaskListView, TaskDetailView, TaskFormView
+from news_scrap import urls as news_url
+from my_app.views import TaskListView, TaskDetailView, TaskFormView
 
 
 urlpatterns = [
@@ -31,7 +31,10 @@ urlpatterns = [
     # url(r'^tasks/<pk>$', UpdateView.as_view()),
     # url(r'^tasks/<pk>/delete$', DeleteView.as_view()),
     # url(r'^tasks/add$', CreateView.as_view()),
-    url(r'^tasks/(?P<pk>[0-9a-f\-]+)$', TaskDetailView.as_view(template_name="my_app/detail.html")),
+    url(r'^tasks/(?P<pk>[0-9a-f\-]+)$',
+        TaskDetailView.as_view(template_name="my_app/detail.html")),
+    
+    url(r'^news/', include(news_url)),
 ]
 
 if settings.DEBUG:

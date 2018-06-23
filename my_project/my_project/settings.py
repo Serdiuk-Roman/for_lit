@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'debug_toolbar',
     'my_app',
     'book_store',
+    'news_scrap',
 ]
 
 MIDDLEWARE = [
