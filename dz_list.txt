@@ -1,0 +1,11 @@
+1. Треугольник Серпинского	***
+2. 2048						***
+3. 2048.curves				***
+4. battle_sim				***
+5. Test						**
+6. Werkzeug Board			***
+7. Rest Api Flask			***
+8. Asyncio chat				000
+9. Shortly Django			***
+10. Shortly Django CBV		000
+11. Власний проект			000

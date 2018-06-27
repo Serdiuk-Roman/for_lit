@@ -19,7 +19,8 @@ from django.conf import settings
 from django.conf.urls import include, url
 
 
-from news_scrap import urls as news_url
+from news_scrap import urls as news_urls
+from habratest import urls as habr_urls
 from my_app.views import TaskListView, TaskDetailView, TaskFormView
 
 
@@ -33,8 +34,9 @@ urlpatterns = [
     # url(r'^tasks/add$', CreateView.as_view()),
     url(r'^tasks/(?P<pk>[0-9a-f\-]+)$',
         TaskDetailView.as_view(template_name="my_app/detail.html")),
-    
-    url(r'^news/', include(news_url)),
+
+    url(r'^news/', include(news_urls)),
+    url(r'^posts/', include(habr_urls)),
 ]
 
 if settings.DEBUG:

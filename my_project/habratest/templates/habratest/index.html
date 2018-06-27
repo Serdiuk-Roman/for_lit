@@ -1,0 +1,22 @@
+{% extends "habratest/base.html" %}
+
+{% block content %}
+  <ul>
+      
+      {% for post in posts %}
+          <li>
+            {{ post.name }} - {{ post.author }}
+            {{ post.text }}
+          </li>
+      {% empty %}
+          <li>No post yet.</li>
+      {% endfor %}
+
+  </ul>
+
+  <form method="post">
+      {% csrf_token %}
+      {{ form }}
+      <button type="submit">Sub</button>
+  </form>
+{% endblock %}
