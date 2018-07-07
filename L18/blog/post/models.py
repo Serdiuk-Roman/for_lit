@@ -10,6 +10,9 @@ class Category(models.Model):
     is_active = models.BooleanField()
     user = models.ForeignKey(User, null=True, on_delete=models.CASCADE)
 
+    def __str__(self):
+        return self.name
+
 
 class Post(models.Model):
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
@@ -25,9 +28,12 @@ class Post(models.Model):
     STATUS_AUTHCRIETED = 80
     STATUSES = (
         (STATUS_DRAFT, 'DRAFT'),
-        (STATUS_PUBLISHED, 'DRAFT'),
-        (STATUS_REJECTED, 'DRAFT'),
-        (STATUS_TRASHED, 'DRAFT'),
-        (STATUS_AUTHCRIETED, 'DRAFT'),
+        (STATUS_PUBLISHED, 'PUBLISHED'),
+        (STATUS_REJECTED, 'REJECTED'),
+        (STATUS_TRASHED, 'TRASHED'),
+        (STATUS_AUTHCRIETED, 'AUTHCRIETED'),
     )
     status = models.SmallIntegerField(choices=STATUSES, default=0)
+
+    def __str__(self):
+        return self.title
