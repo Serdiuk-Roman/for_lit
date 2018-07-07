@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<meta charset="utf-8" />
+<html>
+  <head>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js">
+    </script>
+
+  </head>
+  <body>
+    <div class = "chat">
+      <div>
+
+        <form id="nameform" onsubmit="return false;">
+          <div id="error" ></div>
+          <span><input id="user_name" type="text" />Username</span>
+          <span><input id="user_password" type="text" />Password</span>
+          <input id="send_name" type="button" value="Join"/>
+        </form>
+      </div>
+      <div class = "cont">
+        Status:
+        <span id="status">disconnected</span>
+
+      <div id="log"
+           style="width:20em;height:15em;overflow:auto;border:1px solid black">
+      </div>
+      <form id="chatform" onsubmit="return false;">
+        <input id="text" type="text" />
+        <input id="send" type="button" value="Send" disabled/>
+      </form>
+      </div>
+    </div>
+    {% block javascript %}
+        <script type="text/javascript">
+            {% include "/chat/index.js" %}
+        </script>
+        <!-- The contents of myscript.js will be loaded inside the script tag -->
+    {% endblock %}
+    <!--<link href="{{ static('styles.css') }}" rel="stylesheet">-->
+    <link rel="stylesheet" media="all" href="/static/styles.css" type="text/css" />
+  </body>
+</html>
