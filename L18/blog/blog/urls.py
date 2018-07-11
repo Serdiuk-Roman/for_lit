@@ -15,10 +15,18 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from post.views import BlogIndex
+from post.views import CategoryViewSet, PostGenericAPIView
+
+from rest_framework.routers import DefaultRouter
+
+router = DefaultRouter()
+router.register(r'category', CategoryViewSet)
+router.register(r'posts', PostGenericAPIView)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('i18n/', include('django.conf.urls.i18n')),
-    path('', BlogIndex.as_view()),
+    path('api/', include(router.urls)),
+    # path('i18n/', include('django.conf.urls.i18n')),
+    # path('', BlogIndex.as_view()),
+
 ]
