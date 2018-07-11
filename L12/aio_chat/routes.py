@@ -2,13 +2,12 @@
 # -*- coding: utf-8 -*-
 
 
-from chat import ChatList, WebSocket
-from auth import Login, SignIn, SignOut
+from handlers import index_handler, ws_handler, \
+    LoginView, logout_handler
 
 routes = [
-    ('GET', '/', ChatList, 'main'),
-    ('GET', '/ws', WebSocket, 'chat'),
-    ('*', '/login', Login, 'login'),
-    ('*', '/signin', SignIn, 'signin'),
-    ('*', '/signout', SignOut, 'signout'),
+    ('GET', '/', index_handler, 'main'),
+    ('GET', '/ws', ws_handler, 'ws_chat'),
+    ('*', '/login', LoginView, 'login'),
+    ('*', '/logout', logout_handler, 'logout'),
 ]

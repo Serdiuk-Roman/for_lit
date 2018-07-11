@@ -173,6 +173,7 @@ env/
 tenv/
 tevn/
 venev/
+example/
 
 *.sqlite3
 

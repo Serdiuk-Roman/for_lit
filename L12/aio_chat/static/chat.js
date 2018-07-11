@@ -23,7 +23,7 @@ window.onclose = function(){
 
 var SocketHandler = function() {
     var title = document.getElementById('channel').getAttribute('data-title');
-    var url = "ws://" + location.host + "/chat/" + title + '/';
+    var url = "ws://" + location.host + "/ws";
 
     var sock = new WebSocket(url);
     var intervalId;

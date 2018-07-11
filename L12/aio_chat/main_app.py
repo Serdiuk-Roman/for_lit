@@ -5,18 +5,12 @@
 import asyncio
 import aioredis
 import aiohttp_jinja2
-import aiohttp_debugtoolbar
 import jinja2
-from aiohttp_session import session_middleware
-from aiohttp_session.redis_storage import RedisStorage
-from aiohttp import web, log
+from aiohttp import web
+from collections import defaultdict
 
 from routes import routes
-from middlewares import authorize
-
-import hashlib
 import handlers
-from collections import defaultdict
 
 
 async def static_processor(request):
@@ -47,50 +41,52 @@ class BList(list):
 
 async def main():
 
-    redis_pool = await aioredis.create_pool(
-        'redis://localhost',
-        minsize=5,
-        maxsize=10,
-    )
+    async def close_redis(app):
+        keys = await app.db.keys('chat:users')
 
-    middle = [
-        session_middleware(RedisStorage(redis_pool)),
-        authorize,
+        for key in keys:
+            await app.db.delete(key)
+        app.db.close()
+
+    async def close_websockets(app):
+
+        for channel in app['waiters'].values():
+            while channel:
+                ws = channel.pop()
+                await ws.close(code=1000, message='Server shutdown')
+
+    middlewares = [
+        # session_middleware(RedisStorage(redis_pool)),
+        auth_cookie_factory
     ]
 
-    # if DEBUG:
-    #     middle.append(aiohttp_debugtoolbar.middleware)
-
-    app = web.Application(middlewares=middle)
-
-    # if DEBUG:
-    #     aiohttp_debugtoolbar.setup(app)
+    app = web.Application(middlewares=middlewares)
 
     aiohttp_jinja2.setup(
         app,
-        loader=jinja2.FileSystemLoader('templates')
-    )
+        loader=jinja2.FileSystemLoader('templates'),
+        context_processors=[static_processor, auth_processor])
 
     # route part
     for route in routes:
         app.router.add_route(route[0], route[1], route[2], name=route[3])
     app['static_root_url'] = '/static'
     app.router.add_static('/static', 'static', name='static')
-    # end route part
 
     # db connect
-    # app['redis'] = await aioredis.create_redis(
     app.db = await aioredis.create_redis(
-        # ('localhost', 6379),
-        'redis://localhost',
+        ('localhost', 6379),
         encoding='utf-8'
     )
-    # app.client = ma.AsyncIOMotorClient(MONGO_HOST)
-    # app.db = app.client[MONGO_DB_NAME]
-    # end db connect
 
-    app.on_cleanup.append(on_shutdown)
+    app['waiters'] = defaultdict(BList)
+
+    app.on_shutdown.append(close_websockets)
+    app.on_shutdown.append(close_redis)
+
+    # app.on_cleanup.append(on_shutdown)
     app['websockets'] = []
+
     return app
 
 

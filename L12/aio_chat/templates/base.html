@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="nofollow" />
+    <link rel="stylesheet" href="//oss.maxcdn.com/semantic-ui/2.1.8/semantic.min.css" type="text/css">
+    <title>{{ title }}</title>
+</head>
+<body>
+{% block nav %}
+{% endblock %}
+<div">
+  {% if not current_user %}
+    <div>
+      <h1 align="center">Please, log in</h1>
+    </div>
+  {% endif %}
+  {% if error %}
+    <div>
+      <h1 align="center">{{error}}</h1>
+    </div>
+  {% endif %}
+</div>
+{% block content %}{% endblock %}
+{% block script %}{% endblock %}
+
+</body>
+</html>
