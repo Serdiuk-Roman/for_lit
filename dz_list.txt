@@ -5,7 +5,12 @@
 5. Test						**
 6. Werkzeug Board			***
 7. Rest Api Flask			***
-8. Asyncio chat				000
+8. Asyncio chat				***
 9. Shortly Django			***
 10. Shortly Django CBV		000
 11. Власний проект			000
+12. Авторизация             000
+13. drf apiView             ***
+14. drf ModelView           ***
+15. drf Channels            000
+16.
