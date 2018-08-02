@@ -2,19 +2,37 @@
 # pip install requests
 # pip install beautifulsoup4
 
+from __future__ import absolute_import, unicode_literals
+from celery import shared_task
 
 from bs4 import BeautifulSoup
-
 import requests
 
-url = "http://dataquestio.github.io/web-scraping-pages/simple.html"
 
-page = requests.get(url)
+@shared_task
+def blablabla():
 
-soup = BeautifulSoup(page.content, 'html.parser')
+    url = "https://ua.censor.net.ua/news/all"
 
-main_list = soup.get('article', class_="feed", id="feed")
+    page = requests.get(url)
 
-blocks = main_list.find_all('section', class_='feed__section')
+    soup = BeautifulSoup(page.content, 'html.parser')
 
-print(blocks)
+    main_block = soup.find(class_="curpane")
+
+    main_list = main_block.find_all(
+        'article',
+        {"class": "item"},
+    )
+
+    first_el = [
+        {
+            "title": el.find("h3").text,
+            "time": el.find("time").get("datetime"),
+            "link": el.find("a").get("href"),
+            "short_text": el.find("div", {"class": "anounce"}).find("a").text,
+        }
+        for el in main_list
+    ]
+
+    return first_el

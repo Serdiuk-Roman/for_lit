@@ -41,7 +41,7 @@
 
 # CASCADE, SET_NULL, PROTECT, SET_DEFAULT, DO_NOTHING
 
-# objects =models.Manager()
+# objects = models.Manager()
 # Book.with_author.all()
 # Book.with_author.filter()
 

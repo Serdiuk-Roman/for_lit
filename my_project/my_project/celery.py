@@ -9,7 +9,6 @@ from celery.schedules import crontab
 
 class Config:
     enable_utc = True
-    timezone = 'Europe/London'
 
     timezone = 'Europe/Kiev'
 
@@ -50,9 +49,9 @@ def add(x, y):
 
 
 app.conf.beat_schedule = {
-    # Executes every Monday morning at 7:30 a.m.
     'add-every-5-min': {
-        'task': 'tasks.add.apply_async((2, 2))',
+        # 'task': 'my_project.celery.add',
+        'task': 'news_scrap.tasks.blablabla',
         'schedule': crontab(minute='*/5'),
     },
 }
