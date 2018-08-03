@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelavent variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/home/python/S.R./for_lit/L25/senv"
+VIRTUAL_ENV="/home/rom/lit/L25/senv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

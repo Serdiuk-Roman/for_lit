@@ -171,6 +171,7 @@ env/
 # End of https://www.gitignore.io/api/python,pycharm
 
 tenv/
+senv/
 tevn/
 venev/
 example/
