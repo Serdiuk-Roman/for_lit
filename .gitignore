@@ -175,6 +175,7 @@ senv/
 tevn/
 venev/
 example/
+cte/
 
 *.sqlite3
 
