@@ -5,30 +5,21 @@
 # See documentation in:
 # https://doc.scrapy.org/en/latest/topics/items.html
 
-import scrapy
+from scrapy import Item, Field
 
 
-class TutorialItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+class PostItem(Item):
+    title = Field()
+    text = Field()
+    img = Field()
 
 
-class PostItem(scrapy.Item):
-    title = scrapy.Field()
-    text = scrapy.Field()
-    img = scrapy.Field()
-
-
-class ClothingItem(scrapy.Item):
-    designer_name = scrapy.Field()
-    product_name = scrapy.Field()
-    product_price = scrapy.Field()
-    product_currency = scrapy.Field()
-    product_size = scrapy.Field()
-    product_description = scrapy.Field()
-    img = scrapy.Field()
-
-
-class ShoesItem(scrapy.Item):
-    pass
+class PorterItem(Item):
+    designer_name = Field()
+    link = Field()
+    product_name = Field()
+    price = Field()
+    currency = Field()
+    size = Field()
+    description = Field()
+    images = Field()
